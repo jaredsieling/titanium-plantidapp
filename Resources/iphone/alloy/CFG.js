@@ -1,1 +1,1 @@
-module.exports={"dependencies":{},"brandPrimary":"#CD1625"};
+module.exports={"dependencies":{},"brandPrimary":"#83a614"};

@@ -4,12 +4,15 @@ var _args = arguments[0] || {}, // Any passed in arguments will fall into this p
 	userPlants = null,  // Array placeholder for all users
 	indexes = [];  // Array placeholder for the ListView Index (used by iOS only);
 	
+var userPlants = _args.userPlants;
+	
 function initListView() {
 	var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory + "userPlantData/samples.json");
 	userPlants = JSON.parse(file.read().text).userPlants;
 	userPlants = _.sortBy(plant, function(plant) {
 		return plant.name;
 	});
+	
 	if (userPlants) {
 
 		indexes = [];

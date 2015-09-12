@@ -1,5 +1,5 @@
 
-Sat Sep 12 2015 00:26:59 GMT-0500 (CDT)
+Sat Sep 12 2015 17:20:40 GMT-0500 (CDT)
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.1.1.GA --project-dir /Users/jared/workspaces/titanium/titanium-plantidapp --target simulator --ios-version 8.4 --device-family universal --deploy-type development --sim-type iphone --sim-version 8.4 --device-id F3836B57-BC20-43D4-A8E3-31289623176D --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 49422 --plugin-paths /Users/jared/.appcelerator/install/4.1.3/package/node_modules --config-file /var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T/build-1442035616281.json --no-banner
+  /usr/local/bin/node /Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.1.1.GA --project-dir /Users/jared/workspaces/titanium/titanium-plantidapp --target simulator --ios-version 8.4 --device-family iphone --deploy-type development --sim-type iphone --sim-version 8.4 --device-id F3836B57-BC20-43D4-A8E3-31289623176D --debug-host 10.104.208.40:57958 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 53936 --plugin-paths /Users/jared/.appcelerator/install/4.1.3/package/node_modules --config-file /var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T/build-1442096437074.json --no-banner
 
 [DEBUG]  Detecting modules in /Users/jared/Library/Application Support/Titanium/modules
 [DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/jared/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
@@ -72,17 +72,17 @@ Command
 [DEBUG]  UDID: F3836B57-BC20-43D4-A8E3-31289623176D
 [DEBUG]  Simulator type: iphone
 [DEBUG]  Simulator version: 8.4
-[INFO]   Building for device family: universal
+[INFO]   Building for device family: iphone
 [DEBUG]  Setting Xcode target to Debug
 [DEBUG]  Setting Xcode build OS to iphonesimulator8.4
 [DEBUG]  Xcode installation: /Applications/Xcode.app/Contents/Developer
 [DEBUG]  iOS WWDR certificate: installed
 [INFO]   Minimum iOS version: 7.0
-[INFO]   Debugging disabled
+[INFO]   Debugging enabled via debug host: 10.104.208.40:57958
 [INFO]   Profiler disabled
 [INFO]   Initiating prepare phase
 [INFO]   Found Alloy app in /Users/jared/workspaces/titanium/titanium-plantidapp/app
-[INFO]   Executing Alloy compile: /usr/local/bin/node /Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/.bin/alloy compile /Users/jared/workspaces/titanium/titanium-plantidapp/app --config platform=ios,version=0,simtype=none,devicefamily=universal,deploytype=development,target=simulator --no-colors
+[INFO]   Executing Alloy compile: /usr/local/bin/node /Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/.bin/alloy compile /Users/jared/workspaces/titanium/titanium-plantidapp/app --config platform=ios,version=0,simtype=none,devicefamily=iphone,deploytype=development,target=simulator --no-colors
 [DEBUG]         .__  .__                
 [DEBUG]  _____  |  | |  |   ____ ___.__.
 [DEBUG]  \__  \ |  | |  |  /  _ <   |  |
@@ -91,11 +91,11 @@ Command
 [DEBUG]       \/                 \/
 [DEBUG]  Alloy 1.6.2 by Appcelerator. The MVC app framework for Titanium.
 [DEBUG]  ----- CONFIGURATION -----
-[DEBUG]  raw config = "platform=ios,version=0,simtype=none,devicefamily=universal,deploytype=development,target=simulator"
+[DEBUG]  raw config = "platform=ios,version=0,simtype=none,devicefamily=iphone,deploytype=development,target=simulator"
 [DEBUG]  platform = ios
 [DEBUG]  version = 0
 [DEBUG]  simtype = none
-[DEBUG]  devicefamily = universal
+[DEBUG]  devicefamily = iphone
 [DEBUG]  deploytype = development
 [DEBUG]  target = simulator
 [DEBUG]  project path = /Users/jared/workspaces/titanium/titanium-plantidapp
@@ -106,7 +106,7 @@ Command
 [INFO]   [config.json] config.json unchanged, using cached config.json...
 [DEBUG]  {
 [DEBUG]  "dependencies": {},
-[DEBUG]  "brandPrimary": "#CD1625",
+[DEBUG]  "brandPrimary": "#83a614",
 [DEBUG]  "sourcemap": true,
 [DEBUG]  "autoStyle": false,
 [DEBUG]  "adapters": [
@@ -158,6 +158,16 @@ Command
 [INFO]   created:    "Resources/iphone/alloy/controllers/index.js"
 [DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/index.js.map"
 [INFO]   created:     "Resources/iphone/alloy/styles/index.js"
+[INFO]   [userPlantDetails.xml] view processing...
+[INFO]   style:      "userPlantDetails.tss"
+[INFO]   view:       "userPlantDetails.xml"
+[INFO]   controller: "userPlantDetails.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/userPlantDetails.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/userPlantDetails.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/userPlantDetails.js"
 [INFO]   
 [INFO]   [app.js] using cached app.js...
 [INFO]   
@@ -185,84 +195,82 @@ Command
 [TRACE]  
 [TRACE]  Benchmarking
 [TRACE]  ------------
-[TRACE]  [0.52561s] TOTAL
+[TRACE]  [0.51486s] TOTAL
 [INFO]   
-[INFO]   Alloy compiled in 0.52561s
+[INFO]   Alloy compiled in 0.51486s
 [INFO]   Alloy compiler completed successfully
 [INFO]   Updating Xcode project configuration: project.xcconfig
 [DEBUG]  Setting Info.plist CFBundleShortVersionString to 4.1.0
 [INFO]   Checking for Splash Screen localization
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon.png
 [INFO]   Initiating Xcode pre-compile phase
 [DEBUG]  Ignoring /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-568h@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/Default-568h@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-667h@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/Default-667h@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-Landscape-736h@3x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/Default-Landscape-736h@3x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-Landscape.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/Default-Landscape.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-Landscape@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/Default-Landscape@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-Portrait-736h@3x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/Default-Portrait-736h@3x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-Portrait.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/Default-Portrait.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-Portrait@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/Default-Portrait@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/Default.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/Default@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-60.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-60.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-60@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-60@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-60@3x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-60@3x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-72.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-72.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-72@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-72@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-76.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-76.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-76@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-76@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small-40.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-Small-40.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small-40@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-Small-40@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small-50.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-Small-50.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small-50@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-Small-50@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-Small.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-Small@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small@3x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon-Small@3x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/appicon@2x.png
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/iTunesArtwork => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/iTunesArtwork
-[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/iTunesArtwork@2x => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/iTunesArtwork@2x
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/tabIcon.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/images/tabIcon.png
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/tabIcon@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/images/tabIcon@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-568h@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/Default-568h@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-667h@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/Default-667h@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-Landscape-736h@3x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/Default-Landscape-736h@3x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-Portrait-736h@3x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/Default-Portrait-736h@3x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/Default.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/Default@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-60.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-60.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-60@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-60@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-60@3x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-60@3x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-72.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-72.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-72@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-72@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-76.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-76.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-76@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-76@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small-40.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-Small-40.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small-40@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-Small-40@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small-50.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-Small-50.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small-50@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-Small-50@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-Small.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-Small@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-Small@3x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon-Small@3x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/appicon@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/iTunesArtwork => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/iTunesArtwork
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/iTunesArtwork@2x => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/iTunesArtwork@2x
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/tabIcon.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/images/tabIcon.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/tabIcon@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/images/tabIcon@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/userPlantData/samples.json => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/userPlantData/samples.json
 [INFO]   Processing JavaScript files
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/CFG.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy/CFG.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/app.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/app.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/backbone.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy/backbone.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/constants.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy/constants.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/BaseController.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy/controllers/BaseController.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/index.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy/controllers/index.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/index.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy/styles/index.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/localStorage.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy/sync/localStorage.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/properties.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy/sync/properties.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/sql.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy/sync/sql.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/underscore.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy/underscore.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/widget.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy/widget.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/alloy.js
-[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/polyfill.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/polyfill.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/CFG.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/CFG.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/app.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/app.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/backbone.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/backbone.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/constants.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/constants.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/BaseController.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/controllers/BaseController.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/index.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/controllers/index.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/userPlantDetails.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/controllers/userPlantDetails.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/index.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/styles/index.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/userPlantDetails.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/styles/userPlantDetails.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/localStorage.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/sync/localStorage.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/properties.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/sync/properties.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/sql.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/sync/sql.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/underscore.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/underscore.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/widget.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy/widget.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/alloy.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/polyfill.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/polyfill.js
 [INFO]   Processing Titanium namespace resources
-[DEBUG]  Copying /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/iphone/modules/ui/images => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app/modules/ui/images
-[DEBUG]  Using JavaScriptCore Framework
+[DEBUG]  Copying /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/iphone/modules/ui/images => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app/modules/ui/images
 [INFO]   Compiling localization files
 [DEBUG]  Processing i18n file: en/strings.xml
 [DEBUG]  Processing i18n file: en-GB/strings.xml
 [DEBUG]  Processing i18n file: en-US/strings.xml
 [INFO]   Checking for Splash Screen localization
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 1s 158ms
+[INFO]   Finished building the application in 1s 193ms
 [INFO]   Launching iOS Simulator
-[DEBUG]  [ioslib] Removing old log file: /Users/jared/Library/Developer/CoreSimulator/Devices/F3836B57-BC20-43D4-A8E3-31289623176D/data/Containers/Data/Application/7888C0EB-C05B-4AF1-8F15-28C1C201B0B6/Documents/648bcf32-02ed-4327-9000-bef58541e3f6.log
-[DEBUG]  [ioslib] Executing: /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/node_modules/ioslib/lib/ios-sim "launch" "/Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app" "--verbose" "--xcode-dir" "/Applications/Xcode.app/Contents/Developer" "--udid" "F3836B57-BC20-43D4-A8E3-31289623176D" "--timeout" "180"
+[DEBUG]  [ioslib] Removing old log file: /Users/jared/Library/Developer/CoreSimulator/Devices/F3836B57-BC20-43D4-A8E3-31289623176D/data/Containers/Data/Application/2158C5E6-D888-4903-8B1B-56D7386A89F7/Documents/648bcf32-02ed-4327-9000-bef58541e3f6.log
+[DEBUG]  [ioslib] Executing: /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/node_modules/ioslib/lib/ios-sim "launch" "/Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app" "--verbose" "--xcode-dir" "/Applications/Xcode.app/Contents/Developer" "--udid" "F3836B57-BC20-43D4-A8E3-31289623176D" "--timeout" "180"
 [DEBUG]  [ioslib] Executing: osascript "/Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/node_modules/ioslib/lib/iphone_sim_activate.scpt" "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app"
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7fb1e86032d0> specified by app path /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Ti 4.1.0.app
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7fb1e8735df0> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stderr-pipe-1442035621'
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stdout-pipe-1442035621'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7fa190c21130> specified by app path /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/Plant Buddy.app
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7fa190d397b0> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stderr-pipe-1442096442'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stdout-pipe-1442096442'
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] using device family iphone
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 328DF731-462D-4170-B782-A62BAC6C39DE == F3836B57-BC20-43D4-A8E3-31289623176D
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing DED94ED6-E0BC-4DFE-9118-0442484AD9FC == F3836B57-BC20-43D4-A8E3-31289623176D
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing F3836B57-BC20-43D4-A8E3-31289623176D == F3836B57-BC20-43D4-A8E3-31289623176D
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] set device to : iPhone 5s
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Session started
-[DEBUG]  [ioslib] Found application log file: /Users/jared/Library/Developer/CoreSimulator/Devices/F3836B57-BC20-43D4-A8E3-31289623176D/data/Containers/Data/Application/57BD9D0A-4DE7-49F2-93DE-81FC400D6761/Documents/648bcf32-02ed-4327-9000-bef58541e3f6.log
-[INFO]   Project built successfully in 7s 536ms
+[DEBUG]  [ioslib] Found application log file: /Users/jared/Library/Developer/CoreSimulator/Devices/F3836B57-BC20-43D4-A8E3-31289623176D/data/Containers/Data/Application/3CBFDFFA-571F-40B0-BE74-59802E209542/Documents/648bcf32-02ed-4327-9000-bef58541e3f6.log
+[INFO]   Project built successfully in 7s 588ms
