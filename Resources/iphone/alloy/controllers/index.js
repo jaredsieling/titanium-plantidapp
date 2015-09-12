@@ -72,7 +72,33 @@ function Controller() {
         console.info("[marker] " + JSON.stringify(e, null, 2));
         $.toast.text = "[marker]\nsectionIndex: " + e.sectionIndex + "\nitemIndex: " + e.itemIndex;
     }
-    function doUncaughtException() {
+    function openCamera() {
+        Titanium.Media.showCamera({
+            success: function(event) {
+                Ti.API.debug("Our type was: " + event.mediaType);
+                if (event.mediaType == Ti.Media.MEDIA_TYPE_PHOTO) {
+                    var imageView = Ti.UI.createImageView({
+                        width: win.width,
+                        height: win.height,
+                        image: event.media
+                    });
+                    win.add(imageView);
+                } else alert("got the wrong type back =" + event.mediaType);
+            },
+            cancel: function() {},
+            error: function(error) {
+                var a = Titanium.UI.createAlertDialog({
+                    title: "Camera"
+                });
+                a.setMessage(error.code == Titanium.Media.NO_CAMERA ? "Please run this test on device" : "Unexpected error: " + error.code);
+                a.show();
+            },
+            saveToPhotoGallery: true,
+            allowEditing: true,
+            mediaTypes: [ Ti.Media.MEDIA_TYPE_VIDEO, Ti.Media.MEDIA_TYPE_PHOTO ]
+        });
+    }
+    function openGallery() {
         Titanium.Media.showCamera({
             success: function(event) {
                 Ti.API.debug("Our type was: " + event.mediaType);
@@ -889,49 +915,28 @@ function Controller() {
         id: "otherWin",
         title: "Other"
     });
-    $.__views.__alloyId45 = Ti.UI.createScrollView({
-        scrollType: "vertical",
-        contentWidth: Ti.UI.FILL,
-        contentHeight: Ti.UI.SIZE,
-        id: "__alloyId45"
-    });
-    $.__views.otherWin.add($.__views.__alloyId45);
-    $.__views.__alloyId46 = Ti.UI.createView({
+    $.__views.__alloyId45 = Ti.UI.createView({
         top: 10,
         right: 10,
         bottom: 10,
         left: 10,
         height: Ti.UI.SIZE,
-        layout: "vertical",
-        id: "__alloyId46"
+        layout: "horizontal",
+        id: "__alloyId45"
     });
-    $.__views.__alloyId45.add($.__views.__alloyId46);
-    $.__views.__alloyId47 = Ti.UI.createLabel({
-        width: Ti.UI.FILL,
-        textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-        textid: "hello_world",
-        top: "20",
-        id: "__alloyId47"
+    $.__views.otherWin.add($.__views.__alloyId45);
+    $.__views.camera = Ti.UI.createImageView({
+        id: "camera",
+        image: "/images/camera.jpeg"
     });
-    $.__views.__alloyId46.add($.__views.__alloyId47);
-    $.__views.__alloyId48 = Ti.UI.createButton({
-        title: "uncaughtException",
-        top: "20",
-        id: "__alloyId48"
+    $.__views.__alloyId45.add($.__views.camera);
+    openCamera ? $.__views.camera.addEventListener("click", openCamera) : __defers["$.__views.camera!click!openCamera"] = true;
+    $.__views.gallery = Ti.UI.createImageView({
+        id: "gallery",
+        image: "/images/gallery.jpeg"
     });
-    $.__views.__alloyId46.add($.__views.__alloyId48);
-    doUncaughtException ? $.__views.__alloyId48.addEventListener("click", doUncaughtException) : __defers["$.__views.__alloyId48!click!doUncaughtException"] = true;
-    if (true && !Alloy.Globals.production) {
-        $.__views.__alloyId49 = Ti.UI.createLabel({
-            width: Ti.UI.FILL,
-            textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-            color: "gray",
-            text: "Because you're not in production, you will first see the red screen and then the alert opened by the listener.",
-            top: "5",
-            id: "__alloyId49"
-        });
-        $.__views.__alloyId46.add($.__views.__alloyId49);
-    }
+    $.__views.__alloyId45.add($.__views.gallery);
+    openGallery ? $.__views.gallery.addEventListener("click", openGallery) : __defers["$.__views.gallery!click!openGallery"] = true;
     $.__views.__alloyId44 = Ti.UI.createTab({
         icon: "/images/tabIcon.png",
         activeTitleColor: "#929292",
@@ -960,7 +965,8 @@ function Controller() {
     __defers["$.__views.listView!scrollstart!onScrollstart"] && $.__views.listView.addEventListener("scrollstart", onScrollstart);
     __defers["$.__views.listView!scrollend!onScrollend"] && $.__views.listView.addEventListener("scrollend", onScrollend);
     __defers["$.__views.listView!rowAction!onRowAction"] && $.__views.listView.addEventListener("rowAction", onRowAction);
-    __defers["$.__views.__alloyId48!click!doUncaughtException"] && $.__views.__alloyId48.addEventListener("click", doUncaughtException);
+    __defers["$.__views.camera!click!openCamera"] && $.__views.camera.addEventListener("click", openCamera);
+    __defers["$.__views.gallery!click!openGallery"] && $.__views.gallery.addEventListener("click", openGallery);
     _.extend($, exports);
 }
 
