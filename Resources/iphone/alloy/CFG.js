@@ -1,0 +1,1 @@
+module.exports={"dependencies":{},"brandPrimary":"#CD1625"};

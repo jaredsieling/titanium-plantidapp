@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.plantidapp</id>
+    <name>Plantid</name>
+    <version>4.1.0</version>
+    <publisher>StartupWeekend</publisher>
+    <url>http://www.appcelerator.com</url>
+    <description>This app demonstrates new features in Titanium 4.1.0.</description>
+    <copyright>2015 by Appcelerator, Inc.</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>648bcf32-02ed-4327-9000-bef58541e3f6</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <!-- Use JavaScriptCore instead of TiCore:
+         https://jira.appcelerator.org/browse/TIMOB-18834 -->
+        <use-jscore-framework>true</use-jscore-framework>
+        <plist>
+            <dict>
+                <!-- Specify the build version, incremented via Gruntfile.js:
+            https://jira.appcelerator.org/browse/TIMOB-17993 -->
+                <key>CFBundleVersion</key>
+                <string>123</string>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleLightContent</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Incremented via Gruntfile.js -->
+        <manifest android:versionCode="123">
+            <application android:theme="@style/appcelerator">
+                <meta-data
+                    android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB1ATGRrby9stkKxvdl3SBYxSVB5Kkm7yM"/>
+            </application>
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21"/>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="iphone">ti.map</module>
+        <module platform="android">ti.map</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+        <target device="windows">true</target>
+    </deployment-targets>
+    <sdk-version>4.1.1.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+        <plugin version="1.0">ti.map</plugin>
+    </plugins>
+    <property name="appc-app-id" type="string">55f3b377ea87d3367b066e93</property>
+</ti:app>

@@ -1,0 +1,105 @@
+"TabGroup": {
+	tabsBackgroundColor: "white",
+	tabsTintColor: Alloy.CFG.brandPrimary
+}
+
+"Tab": {
+	icon: "/images/tabIcon.png",
+
+	// NEW (iOS): Set the (active) titleColor (defaults to tabsTintColor)
+	activeTitleColor: "#929292",
+	titleColor: Alloy.CFG.brandPrimary
+}
+
+"#map": {
+
+	// FIXME: https://jira.appcelerator.org/browse/TIMOB-19102
+	mapType: Alloy.Globals.map.NORMAL_TYPE,
+
+	region: {
+		longitude: -122.0502150,
+		latitude: 37.3895100,
+        latitudeDelta: 0.5,
+        longitudeDelta: 0.5
+    }
+}
+
+"ListView[platform=android]": {
+	separatorColor: Alloy.CFG.brandPrimary,
+
+	// NEW (Android): Set separatorHeight
+	separatorHeight: 5
+}
+
+// NEW (iOS): Set custom row actions
+"ListItem[platform=ios]": {
+	canEdit: true,
+	editActions: [
+		{
+			style: Ti.UI.iOS.ROW_ACTION_STYLE_DESTRUCTIVE,
+			title: "Destr."
+		},
+		{
+			style: Ti.UI.iOS.ROW_ACTION_STYLE_NORMAL,
+			title: "Norm."
+		},
+		{
+			style: Ti.UI.iOS.ROW_ACTION_STYLE_DEFAULT,
+			title: "Def."
+		},
+		{
+			color: "#337ab7",
+			title: "Color"
+		}
+	]
+}
+
+"#toast": {
+	bottom: 10,
+	left: 10,
+	right: 10,
+
+	backgroundColor: "#8000",
+	borderRadius: 5,
+	color: "white"
+}
+
+"ScrollableView": {
+	showPagingControl: true,
+	overlayEnabled: true,
+	pagingControlColor: "transparent",
+
+	// PARITY (Android): This works now for Android now as well
+	cacheSize: 3
+}
+
+"ScrollView": {
+	scrollType: "vertical",
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE
+}
+
+"Label": {
+	width: Ti.UI.FILL,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"TextField": {
+	width: Ti.UI.FILL
+}
+
+".padding": {
+	top: 10,
+	right: 10,
+	bottom: 10,
+	left: 10,
+	height: Ti.UI.SIZE
+}
+
+".svLabel": {
+	color: "white"
+}
+
+".help": {
+	color: "gray"
+}
