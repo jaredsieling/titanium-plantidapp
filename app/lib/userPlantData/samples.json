@@ -1,0 +1,35 @@
+{"userPlants":[
+  {
+    "id": "53e58687317c74c7d9de6504",
+    "favorite": false,
+    "name": "Day Lily",
+    "sci_name": "Snifferous Carnitos",
+    "about": "A yellow flower with something about it that makes you love it.",
+    "latitude": 36.870332,
+    "longitude": -110.962368,
+    "group": "wish_list"
+    "photo": "http://api.randomuser.me/portraits/women/0.jpg"
+  },
+  {
+    "id": "53e58687317c74c7d9de6504",
+    "favorite": false,
+    "name": "Tulip",
+    "sci_name": "Tankerous Beasto",
+    "about": "Come on... you know what a tulip is.",
+    "latitude": 36.870332,
+    "longitude": -110.962368,
+    "group": "current",
+    "photo": "http://api.randomuser.me/portraits/women/1.jpg"
+  },
+  {
+    "id": "53e58687317c74c7d9de6504",
+    "favorite": false,
+    "name": "Pine tree",
+    "sci_name": "Carniferous",
+    "about": "Your basic pine tree.",
+    "latitude": 36.870332,
+    "longitude": -110.962368,
+    "group": "last_season",
+    "photo": "http://api.randomuser.me/portraits/women/1.jpg"
+  }
+]}

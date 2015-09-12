@@ -1,6 +1,6 @@
 {
 	"global": {
-		"brandPrimary": "#CD1625"
+		"brandPrimary": "#83a614"
 	},
 	"env:development": {},
 	"env:test": {},
