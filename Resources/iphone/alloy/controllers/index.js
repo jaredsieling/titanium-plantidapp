@@ -72,8 +72,31 @@ function Controller() {
         console.info("[marker] " + JSON.stringify(e, null, 2));
         $.toast.text = "[marker]\nsectionIndex: " + e.sectionIndex + "\nitemIndex: " + e.itemIndex;
     }
-    function doUncaughtException(e) {
-        e.doesNotExist();
+    function doUncaughtException() {
+        Titanium.Media.showCamera({
+            success: function(event) {
+                Ti.API.debug("Our type was: " + event.mediaType);
+                if (event.mediaType == Ti.Media.MEDIA_TYPE_PHOTO) {
+                    var imageView = Ti.UI.createImageView({
+                        width: win.width,
+                        height: win.height,
+                        image: event.media
+                    });
+                    win.add(imageView);
+                } else alert("got the wrong type back =" + event.mediaType);
+            },
+            cancel: function() {},
+            error: function(error) {
+                var a = Titanium.UI.createAlertDialog({
+                    title: "Camera"
+                });
+                a.setMessage(error.code == Titanium.Media.NO_CAMERA ? "Please run this test on device" : "Unexpected error: " + error.code);
+                a.show();
+            },
+            saveToPhotoGallery: true,
+            allowEditing: true,
+            mediaTypes: [ Ti.Media.MEDIA_TYPE_VIDEO, Ti.Media.MEDIA_TYPE_PHOTO ]
+        });
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "index";
