@@ -1,0 +1,71 @@
+<Alloy>
+	<!--
+		This view wraps all of the child views/lists etc. Creates a base layout, vertically aligned.
+	-->
+	<Window id="wrapper" class="vgroup" title="Garden">
+		
+		<!-- 
+		Menu Item to open the bookmarks view
+		-->
+		<Menu id="menu" platform="android">
+			
+			<!-- 
+				Adding the SearchView to the ActionBar via the Menu feature. Leveraging the standard Android Resource for the search
+				icon. Uses shared onChange function with iOS to update listView search text.
+			-->
+			<MenuItem showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" title="Search" icon="Ti.Android.R.drawable.ic_menu_search">
+				<ActionView>
+                    <SearchView ns="Ti.UI.Android" id="searchBar" platform="android" onChange="onSearchChange" />
+                </ActionView>
+            </MenuItem>
+            
+            <!-- Android Menu item for accessing the Bookmarks view-->
+            <MenuItem id="bookmarkBtn" title="Bookmarks" icon="/images/ic_action_action_bookmark.png" onClick="onBookmarkClick" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"/>
+        </Menu>
+        
+		<!--
+		If you would like the searchbar to scroll up with the listView, you can move this line before the last
+		</ListView> tag. However for our implementation, we want the searchBar to be present at all times so we have moved
+		it outside of the ListView tags.
+		-->
+		<SearchBar id="searchBar" platform="ios" class="search" onBookmark="onBookmarkClick" onFocus="onSearchFocus" onCancel="onSearchCancel"  onChange="onSearchChange" />
+		
+		<!--
+			The Directory list. 
+			This listView leverages two ListItem templates to denote regular contacts and those that are bookmarked.
+		-->
+		<ListView id="listView" defaultItemTemplate="userTemplate" onItemclick="onItemClick">
+			<Templates>
+				
+				<!-- UserTemplate - this is the default ListItem template -->
+				<ItemTemplate id="userTemplate" name="userTemplate" class="template">
+					<View class="left-buffer">
+						<ImageView id="userPhoto" bindId="userPhoto" class="avatar" />
+						<View platform="android" class="smoothAvatarBorderRadius" />
+						<View class="vgroup left size">
+							<Label id="name" bindId="name" class="title" />
+							<Label id="userCompany" bindId="userCompany" class="subtitle" />
+						</View>
+						<View class="gray-line bottom"/>
+					</View>
+				</ItemTemplate>
+				
+				<!-- favoriteTemplate - this is the ListItem template for contacts that have been bookmarked -->
+				<ItemTemplate id="favoriteTemplate" name="favoriteTemplate" class="template">
+					<View class="left-buffer">
+						<ImageView id="userPhoto" bindId="userPhoto" class="avatar" />
+						<View platform="android" class="smoothAvatarBorderRadius" />
+						<View class="vgroup left size">
+							<Label id="userName" bindId="userName" class="title" />
+							<Label id="userEmail" bindId="userEmail" class="subtitle" />
+							<Label id="userCompany" bindId="userCompany" class="subtitle" />
+						</View>
+						<Label class="favorite" />
+						<View class="gray-line bottom"/>
+					</View>
+				</ItemTemplate>	
+			</Templates>
+			
+		</ListView>
+	</Window>
+</Alloy>

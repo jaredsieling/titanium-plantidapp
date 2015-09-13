@@ -1,0 +1,67 @@
+<Alloy>
+	<!-- Main Container of the View, title of the Window is pulled from the title property on the main view-->
+	
+		<Window class="container vgroup" opacity="0.0" title="Details">
+			
+			<TitleControl platform="mobileweb">
+				<Label class="title">Profile</Label>
+			</TitleControl>
+		
+			<ActionBar platfor="android" displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" />
+			
+			<!-- 
+				Profile Page
+				- A ScrollView that an end user can swipe to show more information about the user.
+				- Information View, shows phone, email, IM
+				- About View, a blurb of text about the user
+				- MapView shows an annotation of where the user is located
+			-->
+			<ScrollView id="contactInfo" class='vgroup top'>
+				
+				<!-- 
+					Map View 
+					Leverages the Map Module, allowing for v2 of Google Maps and latest codebase unifying Google v2 and IOS
+				-->
+				<Module id="mapview" module="ti.map" method="createView" platform="android,ios,windows" class='no-touch top' />
+				<View ns="Ti.Map" id="mapview" platform="mobileweb" class='buffer border-dark-thick no-touch top' />
+			
+			
+				<!-- User Information -->
+				<View class="vgroup top size">
+					<Label id="name" class='h3 red top-buffer no-touch' >Kelly Smith</Label>
+					<Label id="job" class='h5 gray no-touch' >Account Rep</Label>
+					<Label id="company" class='h5 gray no-touch' >Appcelerator, Inc</Label>
+					<Button id="addFavoriteBtn" class="h4 span-width top-buffer" onClick="toggleFavorite" textid="bookmarkBtn">+ Add To Favorites</Button>
+				</View>
+				
+				<!-- User Actions --->
+				<View class="hgroup top-buffer size">
+					<Label id="callBtn" class="icon icon-btn icon-phone"  onClick="callContact" />
+					<Label id="emailBtn" class="icon icon-btn icon-email" onClick="emailContact" />
+					<Label id="msgBtn" class="icon icon-btn icon-message"  />
+				</View>
+				
+				<View class='separator' />
+				
+				<!-- Contact Information -->
+			 	<View class='buffer vgroup size'>
+					<View class='hgroup size left-buffer top-buffer'>
+						<Label class="h3 icon icon-phone icon-small red left top" />
+						<Label id="phone" class="h6 gray left-buffer">512-555-1212</Label>
+					</View>
+					<View class='hgroup size left-buffer top-buffer'>
+						<Label class="h3 icon icon-email icon-small red left top" />
+						<Label id="email" class="h6 gray left-buffer">kelly.smith@appcelerator.com</Label>
+					</View>
+					<View class='hgroup size left-buffer top-buffer'>
+						<Label class="h3 icon icon-message icon-small red left top" />
+						<Label id="im" class="h6 gray left-buffer right-buffer">kelly.smith</Label>
+					</View>
+					<View class='hgroup size left-buffer top-buffer'>
+						<Label class="h3 icon icon-calendar icon-small red left top" />
+						<Label id="start_date" class="h6 gray left-buffer right-buffer">July 27, 2001</Label>
+					</View>
+				</View>
+			</ScrollView>	
+		</Window>
+</Alloy>

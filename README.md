@@ -1,57 +1,137 @@
-# Appcelerator Titanium 4.1.0 Sample App
-This app demonstrates new features in Titanium 4.1.0. For more information about new and changed API's, see the [Release Notes](https://docs.appcelerator.com/platform/release-notes/?version=4.1.0.GA) and [All Fixed Issues](https://jira.appcelerator.org/issues/?filter=16879) on JIRA.
+[titanium-badge]:http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png
+[expanded-app]:https://github.com/appcelerator-se/corporate-directory/blob/master/screenshots/directory-expanded.png?raw=true
+[app-navigation-gif]:https://github.com/appcelerator-se/corporate-directory/blob/master/screenshots/app-navigation-animated.gif?raw=true
+[add-bookmark-gif]:https://github.com/appcelerator-se/corporate-directory/blob/master/screenshots/add-bookmark-animated.gif?raw=true
+[bookmark-indicator]:https://github.com/appcelerator-se/corporate-directory/blob/master/screenshots/bookmark-indicator.png?raw=true
 
-![screenshots](screenshots.png)
+Corporate Directory App [![Appcelerator Titanium](http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png)](http://appcelerator.com/titanium/)
+=======================
 
-## Features demonstrated in this sample app
+![][expanded-app]
 
-### Windows
 
-* Added [Ti.UI.Windows.CommandBar](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.Windows.CommandBar) (and the rest of the API) for Windows.<br />![Windows](https://img.shields.io/badge/OS-Windows-red.svg?style=flat-square)
+Everyone needs to have quick and easy access to their business contacts. This corporate directory application showcases how you can easily build a high quality, cross platform application using the Appcelerator Mobile Platform.
 
-In anticipation of [ALOY-1280](https://jira.appcelerator.org/browse/ALOY-1280) we use a [polyfill](app/lib/polyfill.js) to be able create the CommandBar via Alloy XML via the powerfull `module` attribute.
+Key App Features 
+----------------
 
-### iOS & Android
+#### master Branch
++ A master / detail application using a customized ListView
++ Searchable List
++ ListViewSections created based on last name initial
++ ListView Indexes (iOS only)
++ Native Navigation Patterns using NavigationWindow for iOS and standard Windows for Android
++ Includes native hooks to Maps, Email and Phone applications
++ Loading data from local Filesystem
 
-* [TIMOB-17842](https://jira.appcelerator.org/browse/TIMOB-17842): Added [Ti.UI.Tab.titleColor](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.Tab-property-titleColor) and [Ti.UI.Tab.activeTitleColor](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.Tab-property-activeTitleColor).<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square)
+#### data-binding Branch
++ Collection data binding to ListView
++ Model / View binding on the Profile Page
++ Uses Alloy Models to sync sample data to the SQLite database
 
-Per tab:
+_Note: The data-binding branch does not create ListViewSections in the directory view._
 
-#### Map
+Quick Start
+-----------
++ Open **Appcelerator Studio** and from the menu select _File -> Import..._
++ In the **Import** dialog that opens, make sure the you expand the _Git_ folder and select _Git Repository as New Project_
++ Click the **URI** radio button option and paste URL of this repository into the text field
++ Click _Finish_
 
-* [TIMOB-2231](https://jira.appcelerator.org/browse/TIMOB-2231): Added [Modules.Map.Circle](https://docs.appcelerator.com/platform/latest/#!/api/Modules.Map.Circle), [Modules.Map.Polyline](https://docs.appcelerator.com/platform/latest/#!/api/Modules.Map.Polyline) and [Modules.Map.Polygon](https://docs.appcelerator.com/platform/latest/#!/api/Modules.Map.Polygon) to the Map module.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square) ![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square) 
+_Note: By default this project will be downloaded and cloned into your existing workspace_
 
-#### ListView
+App Navigation
+--------------
+While the Directory app seems pretty full featured, its primarily a basic master / detail view application. 
 
-* [TIMOB-17621](https://jira.appcelerator.org/browse/TIMOB-17621): Added [Ti.UI.ListView.separatorHeight](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ListView-property-separatorHeight).<br />![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
-* [TIMOB-16244](https://jira.appcelerator.org/browse/TIMOB-16244): Added [Ti.UI.ListView:scrollstart](https://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ListView-event-scrollstart) and [Ti.UI.ListView:scrollend](https://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ListView-event-scrollend) events.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square) ![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
-* [TIMOB-16494](https://jira.appcelerator.org/browse/TIMOB-16494): Added [Ti.UI.ListView.addMarker()](https://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ListView-method-addMarker) to listen to multiple markers.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square) ![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
-* [TIMOB-15596](https://jira.appcelerator.org/browse/TIMOB-15596): Added [Ti.UI.ListItem.editActions](https://docs.appcelerator.com/platform/latest/#!/guide/ListViews-section-37521650_ListViews-ActionItems) for [ListView Action Items](https://docs.appcelerator.com/platform/latest/#!/guide/ListViews-section-37521650_ListViews-ActionItems).<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square)
+![Directory App Navigation][app-navigation-gif]
 
-#### cacheSize
++ MasterView => Directory Listing
+    + View Contacts in Searchable List
+    + Access Bookmarks
+    + Quick Index Search - swipe left to reveal List Index (iOS Only)
+    
++ DetailView => Profile View
+    + View Contact information
+    + Add/Remove Contact as Bookmark
+    + One Click to Email
+    + One Click to Call
 
-* [TIMOB-18874](https://jira.appcelerator.org/browse/TIMOB-18874): Parity for [Ti.UI.ScrollableView.cacheSize](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.ScrollableView-property-cacheSize)<br />![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
+There is also one other view, for viewing your bookmarked contacts, but as you can see in the code we are actually _re-using_ the same Directory Listing as the MasterView, and just filtering the contacts based on which ones are bookmarks. This is a great technique for when you need to show content, but simply need to filter by a particular property etc.
 
-#### Other
 
-* [TIMOB-17145](https://jira.appcelerator.org/browse/TIMOB-17145): Parity for `PATCH` as method for [Ti.Network.HTTPClient.open()](https://docs.appcelerator.com/platform/latest/#!/api/Titanium.Network.HTTPClient-method-open)<br />![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
-* [TIMOB-18905](https://jira.appcelerator.org/browse/TIMOB-18964): Material Design dialogs on Android 4.x and older.<br />![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
-* [TIMOB-18816](https://jira.appcelerator.org/browse/TIMOB-18816): Added support for regional languages to [Internationalization](http://docs.appcelerator.com/platform/latest/#!/guide/Internationalization-section-29004892_Internationalization-Languagestrings).<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square) ![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
-* [TIMOB-18433](https://jira.appcelerator.org/browse/TIMOB-18433): Added [Ti.UI.TextField.hintTextColor](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.TextField-property-hintTextColor) and [Ti.UI.TextArea.hintTextColor](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.TextArea-property-hintTextColor).<br />![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
-* [TIMOB-17827](https://jira.appcelerator.org/browse/TIMOB-17827): Added [Ti.UI.Label.lines](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.Label-property-lines) and [Ti.UI.Label.maxLines](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.Label-property-maxLines).<br />![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
-* [TIMOB-18103](https://jira.appcelerator.org/browse/TIMOB-18103): Added [Ti.App:uncaughtException](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.App-event-uncaughtException) to listen to uncaught JavaScript exceptions.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square) ![Android](https://img.shields.io/badge/OS-Android-green.svg?style=flat-square)
 
-#### tiapp.xml
 
-* [TIMOB-18834](https://jira.appcelerator.org/browse/TIMOB-18834): Added option to use JavaScriptCore instead of TiCore.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square)
-* [TIMOB-17993](https://jira.appcelerator.org/browse/TIMOB-17993): Added option to manually set `CFBundleVersion` and `CFBundleShortVersionString`.<br />![iOS](https://img.shields.io/badge/OS-iOS-blue.svg?style=flat-square)
+Bookmarks
+---------
+To quickly access people that you contact more frequently, this Directory application allows you to easily bookmark a contact for quick reference later. Bookmarked contacts are denoted by a light blue ribbon. 
 
-See [Gruntfile.js](Gruntfile.js) for an example of how you can bump an integer build version number for Android and iOS while leaving it up to Titanium to use `<version>` for the release version number.
- 
-	npm install
+![Bookmarked Contact][bookmark-indicator]
 
-	# to bump release 4.1.0 to 4.2.0 and build 123 to 124
-	grunt version:minor
+You can access your bookmarked contacts at anytime by clicking on the _book_ icon next to the search bar (on iOS) or in the action bar (on Android). 
 
-	# to bump build 124 to 125
-	grunt version
+Adding a bookmark is easy, as the image below demonstrates.
+
+![Adding a Bookmark (animation)][add-bookmark-gif]
+
+#### Adding a Bookmark
+1. **Open** the _Directory_ app
+2. **Click** on a contact that is not already bookmarked
+3. On the _Profile_ view, **click** on the _Add to Bookmarks_ button
+4. **Click** on the _Directory_ back button to see your new bookmarked contact
+5. 
+
+#### Removing a Bookmark
+1. **Open** the _Directory_ app
+2. **Click** on a contact that is bookmarked
+3. On the _Profile_ view, **click** on the _Remove From Bookmarks_ button
+4. **Click** on the _Directory_ back button to see your new bookmarked contact
+
+
+Get Help
+------------
+
+There are a number of ways to get help with the Appcelerator Mobile Platform.
+
+### Official Documentation, Tutorials and Videos
+
+Please visit the official documentation site at [http://docs.appcelerator.com/](http://docs.appcelerator.com/) for the latest and historical documentation on Titanium, Alloy and the various products built by Appcelerator.
+
+### Developer Community 
+
+[Appcelerator Developer](http://developer.appcelerator.com) is our developer community.  
+
+### Video Tutorials
+
+[Appcelerator Videos](http://www.vimeo.com/appcelerator) is our main video channel
+for video tutorials on Titanium.
+
+### IRC 
+
+Titanium developers regularly visit `#titanium_app` on irc.freenode.net.
+
+### Twitter
+
+Please consider following the [@Appcelerator Twitter](http://www.twitter.com/appcelerator)
+team for updates.
+
+### Blog
+
+The Appcelerator corporate blog is called [Think Mobile](http://thinkmobile.appcelerator.com/blog).
+The Appcelerator developer blog is located at (http://developer.appcelerator.com/blog).
+
+### Commercial Support, Licensing
+
+We give our software away for FREE!  In order to do that, we have programs for 
+companies that require additional level of assistance through training or commercial support,
+need special licensing or want additional levels of capabilities.  Please visit the
+[Appcelerator Website](http://www.appcelerator.com) for more information about Appcelerator or
+email [info@appcelerator.com](mailto:info@appcelerator.com).
+
+
+Legal Stuff
+-----------
+
+Appcelerator is a registered trademark of Appcelerator, Inc. Titanium is 
+a registered trademark of Appcelerator, Inc.  Please see the LEGAL information about using our trademarks,
+privacy policy, terms of usage and other legal information at [http://www.appcelerator.com/legal](http://www.appcelerator.com/legal).

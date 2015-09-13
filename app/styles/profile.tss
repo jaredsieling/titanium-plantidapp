@@ -1,0 +1,118 @@
+/**
+ *                              _                _
+ *                             | |              | |
+ *    __ _ _ __  _ __   ___ ___| | ___ _ __ __ _| |_ ___  _ __
+ *   / _` | '_ \| '_ \ / __/ _ \ |/ _ \ '__/ _` | __/ _ \| '__|
+ *  | (_| | |_) | |_) | (_|  __/ |  __/ | | (_| | || (_) | |
+ *   \__,_| .__/| .__/ \___\___|_|\___|_|  \__,_|\__\___/|_|
+ *        | |   | |
+ *        |_|   |_|
+ *
+ *
+ * @overview
+ * This is the corresponding style sheet for the Profile View. All
+ * class, ID, and element tag references can be found here.
+ *
+ * @copyright
+ * Copyright (c) 2014 by Appcelerator, Inc. All Rights Reserved.
+ *
+ * @license
+ * Licensed under the terms of the Apache Public License
+ * Please see the LICENSE included with this distribution for details.
+ */
+
+/**
+ * 	General element and UI styles
+ */
+"Label":{
+	autoLink: Ti.UI.AUTOLINK_ALL
+},
+
+"#mapview":{
+	enableZoomControls: false,
+	compassEnabled: false,
+	height: "30%",
+},
+
+"#addBookmarkBtn[platform=android, mobileweb]":{
+	backgroundColor: 'transparent',
+	color: "#C41230",
+	borderWidth:0
+},
+
+".container":{
+	backgroundColor: "#fff",
+	theme: "appcelerator"
+},
+
+'.separator':{
+	top:25,
+	height: 1,
+	width: "90%",
+	backgroundColor:"#acacac"
+},
+
+
+/**
+ * 	Action Button Styles
+ *  These styles represent unicode character codes for the icon fonts
+ *  being used to represent the icons on the profile view
+ */
+
+".icon-phone":{
+	text: "\uf095"
+},
+
+".icon-email":{
+	text:"\uf0e0"
+},
+
+".icon-message":{
+	text:"\uf075"
+},
+
+".icon-calendar":{
+	text: "\uf073"
+},
+
+".icon-btn":{
+	height: 60,
+	width: 60,
+	color: "#C41230",
+	borderRadius: 30,
+	borderWidth: 2,
+	borderColor: "#C41230",
+	backgroundColor: "#33C41230",
+	textAlign: "center",
+	font:{
+		fontSize: 24
+	},
+	left:"10%"
+},
+
+'.icon-small':{
+	font:{
+		fontSize:18
+	}
+},
+
+/**
+ * 	MobileWeb Specific Styles
+ */
+"Window[platform=mobileweb]": {
+	backgroundColor:"#fff",
+	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT],
+	titleAttributes:  {
+        color: "#ae331f"
+   },
+   hideShadow: true,
+   barColor:"#fff"
+},
+
+".title[platform=mobileweb]":{
+    color: "#ae331f",
+    font:{
+    	fontSize: 20
+    },
+    width: Ti.UI.SIZE
+}

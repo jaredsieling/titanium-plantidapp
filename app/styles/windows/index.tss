@@ -1,7 +1,0 @@
-"Window": {
-	backgroundColor: Alloy.CFG.brandPrimary
-}
-
-"Label": {
-	color: "white"
-}

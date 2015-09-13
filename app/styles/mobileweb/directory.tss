@@ -1,0 +1,73 @@
+/**
+ *                              _                _             
+ *                             | |              | |            
+ *    __ _ _ __  _ __   ___ ___| | ___ _ __ __ _| |_ ___  _ __ 
+ *   / _` | '_ \| '_ \ / __/ _ \ |/ _ \ '__/ _` | __/ _ \| '__|
+ *  | (_| | |_) | |_) | (_|  __/ |  __/ | | (_| | || (_) | |   
+ *   \__,_| .__/| .__/ \___\___|_|\___|_|  \__,_|\__\___/|_|   
+ *        | |   | |                                            
+ *        |_|   |_|  
+ *      
+ *      
+ * @overview
+ * This is the corresponding style sheet for the Directory View. All
+ * class, ID, and element tag references can be found here.
+ *
+ * @copyright
+ * Copyright (c) 2014 by Appcelerator, Inc. All Rights Reserved.
+ *
+ * @license
+ * Licensed under the terms of the Apache Public License
+ * Please see the LICENSE included with this distribution for details.
+ */
+
+"Window": {
+	backgroundColor:"#fff",
+	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT],
+	titleAttributes:  {
+        color: "#ae331f"
+   },
+   hideShadow: true,
+   barColor:"#fff"
+},
+
+".navbtn":{
+	color: "#C41230",
+	font:{
+		fontFamily:"icomoon",
+		fontSize:36
+	}
+}
+
+".logo":{
+	text: "\ue601",
+	color: "#C41230",
+	font:{
+		fontFamily:"icomoon",
+		fontSize:28
+	}
+},
+".bookmark":{
+	//text:"\uf02e"
+	text: "\ue601",
+	color: "#C41230",
+	font:{
+		fontFamily:"icomoon",
+		fontSize:28
+	}
+}
+
+"#winTitle":{
+    color: "#ae331f",
+    text: "\ue601 Directory",
+    font:{
+    	fontSize: 20,
+    	fontFamily:"icomoon"
+    }
+}
+
+"#tableView":{
+	tintColor: "#666",
+	borderWidth:0
+}
+

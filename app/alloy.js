@@ -10,12 +10,3 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
-if (OS_ANDROID || OS_IOS) {
-
-	// we need an Alloy.Globals.* reference to use as value in index.tss
-	Alloy.Globals.map = require('ti.map');
-
-	// we need an Alloy.Globals.* reference to use as condition in index.xml
-	Alloy.Globals.production = ENV_PROD;
-
-}
