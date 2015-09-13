@@ -39,6 +39,7 @@ $.native.text = _args.native;
 $.water.text = _args.water;
 $.soil.text = _args.soil;
 $.light.text = _args.light;
+$.social.text = _args.social;
 
 /**
  * Set the Map Region for the Map Module so that it is at the right zoom level

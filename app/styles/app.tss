@@ -352,7 +352,7 @@
 
 '.icon':{
 	font:{
-		fontFamily: 'icomoon', 
+		fontFamily: 'FontAwesome', 
 		fontSize: 20 
 	}
 },

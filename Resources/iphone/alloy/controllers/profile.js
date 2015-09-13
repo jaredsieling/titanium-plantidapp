@@ -122,7 +122,6 @@ function Controller() {
     $.__views.contactInfo.add($.__views.__alloyId20);
     $.__views.callBtn = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
-        text: "",
         height: 60,
         width: 60,
         color: "#83a614",
@@ -133,16 +132,16 @@ function Controller() {
         textAlign: "center",
         font: {
             fontSize: 20,
-            fontFamily: "icomoon"
+            fontFamily: "FontAwesome"
         },
         left: "10%",
-        id: "callBtn"
+        id: "callBtn",
+        text: ""
     });
     $.__views.__alloyId20.add($.__views.callBtn);
     buyPlant ? $.__views.callBtn.addEventListener("click", buyPlant) : __defers["$.__views.callBtn!click!buyPlant"] = true;
     $.__views.emailBtn = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
-        text: "",
         height: 60,
         width: 60,
         color: "#83a614",
@@ -153,15 +152,15 @@ function Controller() {
         textAlign: "center",
         font: {
             fontSize: 20,
-            fontFamily: "icomoon"
+            fontFamily: "FontAwesome"
         },
         left: "10%",
-        id: "emailBtn"
+        id: "emailBtn",
+        text: ""
     });
     $.__views.__alloyId20.add($.__views.emailBtn);
     $.__views.msgBtn = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
-        text: "",
         height: 60,
         width: 60,
         color: "#83a614",
@@ -172,10 +171,11 @@ function Controller() {
         textAlign: "center",
         font: {
             fontSize: 20,
-            fontFamily: "icomoon"
+            fontFamily: "FontAwesome"
         },
         left: "10%",
-        id: "msgBtn"
+        id: "msgBtn",
+        text: ""
     });
     $.__views.__alloyId20.add($.__views.msgBtn);
     $.__views.__alloyId21 = Ti.UI.createView({
@@ -233,7 +233,7 @@ function Controller() {
         left: 0,
         font: {
             fontSize: 20,
-            fontFamily: "icomoon"
+            fontFamily: "FontAwesome"
         },
         color: "#83a614",
         text: "",
@@ -307,10 +307,10 @@ function Controller() {
         left: 0,
         font: {
             fontSize: 20,
-            fontFamily: "icomoon"
+            fontFamily: "FontAwesome"
         },
         color: "#83a614",
-        text: "",
+        text: "",
         id: "__alloyId31"
     });
     $.__views.__alloyId30.add($.__views.__alloyId31);
@@ -381,10 +381,10 @@ function Controller() {
         left: 0,
         font: {
             fontSize: 20,
-            fontFamily: "icomoon"
+            fontFamily: "FontAwesome"
         },
-        text: "",
         color: "#83a614",
+        text: "",
         id: "__alloyId37"
     });
     $.__views.__alloyId36.add($.__views.__alloyId37);
@@ -393,9 +393,9 @@ function Controller() {
         left: 10,
         right: 10,
         font: {
-            fontSize: 14
+            fontSize: 18
         },
-        color: "#666",
+        color: "#83a614",
         text: "Soil Care",
         id: "__alloyId38"
     });
@@ -420,6 +420,79 @@ function Controller() {
         id: "soil"
     });
     $.__views.__alloyId39.add($.__views.soil);
+    $.__views.__alloyId40 = Ti.UI.createView({
+        top: 25,
+        height: 1,
+        width: "90%",
+        backgroundColor: "#acacac",
+        id: "__alloyId40"
+    });
+    $.__views.contactInfo.add($.__views.__alloyId40);
+    $.__views.__alloyId41 = Ti.UI.createView({
+        layout: "vertical",
+        top: 10,
+        left: 10,
+        right: 10,
+        bottom: 10,
+        height: Ti.UI.SIZE,
+        width: Ti.UI.SIZE,
+        id: "__alloyId41"
+    });
+    $.__views.contactInfo.add($.__views.__alloyId41);
+    $.__views.__alloyId42 = Ti.UI.createView({
+        layout: "horizontal",
+        top: 10,
+        left: 10,
+        height: Ti.UI.SIZE,
+        width: Ti.UI.SIZE,
+        id: "__alloyId42"
+    });
+    $.__views.__alloyId41.add($.__views.__alloyId42);
+    $.__views.__alloyId43 = Ti.UI.createLabel({
+        autoLink: Ti.UI.AUTOLINK_ALL,
+        top: 0,
+        left: 0,
+        font: {
+            fontSize: 20,
+            fontFamily: "FontAwesome"
+        },
+        color: "#83a614",
+        text: "",
+        id: "__alloyId43"
+    });
+    $.__views.__alloyId42.add($.__views.__alloyId43);
+    $.__views.__alloyId44 = Ti.UI.createLabel({
+        autoLink: Ti.UI.AUTOLINK_ALL,
+        left: 10,
+        right: 10,
+        font: {
+            fontSize: 18
+        },
+        color: "#83a614",
+        text: "What other's say...'",
+        id: "__alloyId44"
+    });
+    $.__views.__alloyId42.add($.__views.__alloyId44);
+    $.__views.__alloyId45 = Ti.UI.createView({
+        layout: "horizontal",
+        top: 10,
+        left: 10,
+        height: Ti.UI.SIZE,
+        width: Ti.UI.SIZE,
+        id: "__alloyId45"
+    });
+    $.__views.__alloyId41.add($.__views.__alloyId45);
+    $.__views.social = Ti.UI.createLabel({
+        autoLink: Ti.UI.AUTOLINK_ALL,
+        left: 10,
+        right: 10,
+        font: {
+            fontSize: 12
+        },
+        color: "#666",
+        id: "social"
+    });
+    $.__views.__alloyId45.add($.__views.social);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var _args = arguments[0] || {}, Map = require("ti.map"), $FM = require("favoritesmgr");
@@ -429,6 +502,7 @@ function Controller() {
     $.water.text = _args.water;
     $.soil.text = _args.soil;
     $.light.text = _args.light;
+    $.social.text = _args.social;
     var lat = _args.latitude;
     $.mapview.setRegion({
         latitude: lat || 30.631256,

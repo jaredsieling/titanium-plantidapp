@@ -59,30 +59,6 @@
  *  being used to represent the icons on the profile view
  */
 
-".icon-phone":{
-	text: "\uf095"
-},
-
-".icon-email":{
-	text:"\uf0e0"
-},
-
-".icon-message":{
-	text:"\uf075"
-},
-
-".icon-calendar":{
-	text: "\uf073"
-},
-".icon-shopping-cart":{
-	text: "\uf207"
-},
-".icon-question":{
-	text: "\uf128"
-},
-".icon-shared":{
-	text: "\uf064"
-},
 
 ".icon-btn":{
 	height: 60,

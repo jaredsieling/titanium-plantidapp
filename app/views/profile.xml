@@ -35,9 +35,9 @@
 				
 				<!-- User Actions --->
 				<View class="hgroup top-buffer size">
-					<Label id="callBtn" class="icon icon-btn icon-shopping-cart"  onClick="buyPlant" />
-					<Label id="emailBtn" class="icon icon-btn icon-question" />
-					<Label id="msgBtn" class="icon icon-btn icon-shared"  />
+					<Label id="callBtn" class="icon icon-btn" text="\uf07a"  onClick="buyPlant" />
+					<Label id="emailBtn" class="icon icon-btn" text="\uf128" />
+					<Label id="msgBtn" class="icon icon-btn" text="\uf064" />
 				</View>
 				
 				<View class="vgroup top size">
@@ -60,7 +60,7 @@
 				
 				<View class='buffer vgroup size'>
 					<View class='hgroup size left-buffer top-buffer'>
-						<Label class="h3 icon icon-small green left top" text="\uf075" />
+						<Label class="h3 icon icon-small green left top" text="\uf185" />
 						<Label class="h4 green left-buffer right-buffer">Light</Label>
 					</View>
 					<View class='hgroup size left-buffer top-buffer'>
@@ -72,11 +72,23 @@
 				
 			 	<View class='buffer vgroup size'>
 					<View class='hgroup size left-buffer top-buffer'>
-						<Label class="h3 icon icon-message icon-small green left top" text="\uf073" />
-						<Label class="h5 gray left-buffer right-buffer">Soil Care</Label>
+						<Label class="h3 icon icon-small green left top" text="\uf18c" />
+						<Label class="h4 green left-buffer right-buffer">Soil Care</Label>
 					</View>
 					<View class='hgroup size left-buffer top-buffer'>
 						<Label id="soil" class="h6 gray left-buffer right-buffer"></Label>
+					</View>
+				</View>
+				
+				<View class='separator' />
+				
+			 	<View class='buffer vgroup size'>
+					<View class='hgroup size left-buffer top-buffer'>
+						<Label class="h3 icon icon-small green left top" text="\uf086" />
+						<Label class="h4 green left-buffer right-buffer">What other's say...'</Label>
+					</View>
+					<View class='hgroup size left-buffer top-buffer'>
+						<Label id="social" class="h6 gray left-buffer right-buffer"></Label>
 					</View>
 				</View>
 			</ScrollView>	
