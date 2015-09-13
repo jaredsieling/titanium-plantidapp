@@ -39,8 +39,8 @@
 				
 				<!-- UserTemplate - this is the default ListItem template -->
 				<ItemTemplate id="userTemplate" name="userTemplate" class="template">
-					<View class="left-buffer">
-						<ImageView id="userPhoto" bindId="userPhoto" class="avatar" />
+					<View class="main-buffer">
+						<ImageView id="userPhoto" bindId="userPhoto" class="mainPlantImg" />
 						<View platform="android" class="smoothAvatarBorderRadius" />
 						<View class="vgroup left size">
 							<Label id="name" bindId="name" class="title" />

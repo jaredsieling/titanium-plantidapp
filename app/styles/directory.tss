@@ -70,6 +70,17 @@
 	left: 0,
 	borderRadius: 35
 },
+".mainPlantImg":{
+	left: 0,
+	right: 0,
+	height: 200,
+	width: Titanium.UI.FILL
+},
+".main-buffer":{
+	left: 5,
+	right: 5,
+	bottom: 5
+},
 
 ".smoothAvatarBorderRadius": {
 	borderWidth: 1.5,
@@ -80,7 +91,7 @@
 	left: 0,
 	borderRadius: 35,
 	opacity: 0.6
-}
+},
 
 ".search":{ 
 	backgroundColor: "#fff",

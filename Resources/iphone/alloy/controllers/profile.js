@@ -275,11 +275,11 @@ function Controller() {
         autoLink: Ti.UI.AUTOLINK_ALL,
         top: 0,
         left: 0,
-        text: "",
         font: {
             fontSize: 20,
             fontFamily: "icomoon"
         },
+        text: "",
         color: "#C41230",
         id: "__alloyId41"
     });
@@ -308,11 +308,11 @@ function Controller() {
         autoLink: Ti.UI.AUTOLINK_ALL,
         top: 0,
         left: 0,
-        text: "",
         font: {
             fontSize: 20,
             fontFamily: "icomoon"
         },
+        text: "",
         color: "#C41230",
         id: "__alloyId43"
     });

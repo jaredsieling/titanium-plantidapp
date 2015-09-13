@@ -128,13 +128,10 @@ function Controller() {
                 bindId: "userPhoto",
                 properties: {
                     preventDefaultImage: true,
-                    borderWidth: 1,
-                    borderColor: "#acacac",
-                    height: 75,
-                    width: 75,
-                    top: 12,
                     left: 0,
-                    borderRadius: 35,
+                    right: 0,
+                    height: 200,
+                    width: Titanium.UI.FILL,
                     bindId: "userPhoto"
                 }
             };
@@ -193,7 +190,9 @@ function Controller() {
             return __alloyId6;
         }(),
         properties: {
-            left: 10
+            left: 5,
+            right: 5,
+            bottom: 5
         }
     };
     __alloyId3.push(__alloyId5);
