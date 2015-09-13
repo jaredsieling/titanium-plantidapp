@@ -12,7 +12,7 @@
     "about": "Learn all you need to know about this plant.\r\n",
     "latitude": 34.734229,
     "longitude": -102.70047,
-    "photo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Tulip_-_floriade_canberra.jpg"
+    "photo": "https://raw.githubusercontent.com/jaredsieling/titanium-plantidapp/gh-pages/jadecard.jpg"
   },
   {
     "id": "53e586876f0b9f48e378d860",
@@ -27,7 +27,7 @@
     "about": "Amet nulla deserunt do velit duis ex anim. Officia esse ipsum sint elit amet ex officia consectetur in ut Lorem pariatur occaecat sit. Labore est aliqua voluptate reprehenderit.\r\n",
     "latitude": 30.764887,
     "longitude": -118.577644,
-    "photo": "http://api.randomuser.me/portraits/men/2.jpg"
+    "photo": "https://raw.githubusercontent.com/jaredsieling/titanium-plantidapp/gh-pages/spidercard.jpg"
   },
   {
     "id": "53e58687c7f22a0bdec2d552",
@@ -42,6 +42,6 @@
     "about": "Eiusmod anim quis elit tempor sunt deserunt do qui excepteur proident ipsum id in. Occaecat aliquip adipisicing eu incididunt voluptate incididunt irure anim commodo veniam. Minim anim do in aliqua elit mollit consectetur mollit ad esse minim. Do enim id ex consequat amet. Sit Lorem enim reprehenderit sit voluptate cillum nulla ad ullamco esse aute sint consectetur veniam. Commodo pariatur nostrud esse quis ex cillum ea pariatur in. Amet reprehenderit velit elit ipsum cupidatat sunt est sunt velit incididunt mollit.\r\n",
     "latitude": 31.945119,
     "longitude": -108.253709,
-    "photo": "http://api.randomuser.me/portraits/women/3.jpg"
+    "photo": "https://raw.githubusercontent.com/jaredsieling/titanium-plantidapp/gh-pages/philocard.jpg"
   }
 ]}

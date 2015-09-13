@@ -1,0 +1,426 @@
+
+Sat Sep 12 2015 19:47:27 GMT-0500 (CDT)
+
+Operating System
+  Name                        = Mac OS X
+  Version                     = 10.10.5
+  Architecture                = 64bit
+  # CPUs                      = 4
+  Memory                      = 8589934592
+
+Node.js
+  Node.js Version             = 0.10.30
+  npm Version                 = 1.4.21
+
+Titanium CLI
+  CLI Version                 = 4.0.1
+
+Titanium SDK
+  SDK Version                 = 4.1.1.GA
+  SDK Path                    = /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA
+  Target Platform             = iphone
+
+Command
+  /usr/local/bin/node /Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.1.1.GA --project-dir /Users/jared/workspaces/titanium/titanium-plantidapp --target simulator --ios-version 8.4 --device-family iphone --deploy-type development --sim-type iphone --sim-version 8.4 --device-id 54A30357-6114-466B-B1A4-9C86DCB1EAA1 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51604 --plugin-paths /Users/jared/.appcelerator/install/4.1.3/package/node_modules --config-file /var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T/build-1442105243918.json --no-banner
+
+[DEBUG]  Detecting modules in /Users/jared/Library/Application Support/Titanium/modules
+[DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/jared/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
+[DEBUG]  Detected android module: facebook 3.0.2 @ /Users/jared/Library/Application Support/Titanium/modules/android/facebook/3.0.2
+[DEBUG]  Detected android module: facebook 3.0.3 @ /Users/jared/Library/Application Support/Titanium/modules/android/facebook/3.0.3
+[DEBUG]  Detected android module: facebook 4.0.5 @ /Users/jared/Library/Application Support/Titanium/modules/android/facebook/4.0.5
+[DEBUG]  Detected android module: ti.cloudpush 3.3.0 @ /Users/jared/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.0
+[DEBUG]  Detected android module: ti.cloudpush 3.3.4 @ /Users/jared/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.4
+[DEBUG]  Detected android module: ti.cloudpush 3.3.7 @ /Users/jared/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.7
+[DEBUG]  Detected android module: ti.cloudpush 3.4.0 @ /Users/jared/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.4.0
+[DEBUG]  Detected android module: ti.map 2.1.4 @ /Users/jared/Library/Application Support/Titanium/modules/android/ti.map/2.1.4
+[DEBUG]  Detected android module: ti.map 2.2.2 @ /Users/jared/Library/Application Support/Titanium/modules/android/ti.map/2.2.2
+[DEBUG]  Detected android module: ti.map 2.2.3 @ /Users/jared/Library/Application Support/Titanium/modules/android/ti.map/2.2.3
+[DEBUG]  Detected android module: ti.map 2.3.3 @ /Users/jared/Library/Application Support/Titanium/modules/android/ti.map/2.3.3
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.5 @ /Users/jared/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.5
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.7 @ /Users/jared/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.7
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.9 @ /Users/jared/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.9
+[DEBUG]  Detected iphone module: com.appcelerator.apm 1.1.1 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/com.appcelerator.apm/1.1.1
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.0.1 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.0.1
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.1.0 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.1.0
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.1.1 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.1.1
+[DEBUG]  Detected iphone module: facebook 3.1.1 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/facebook/3.1.1
+[DEBUG]  Detected iphone module: facebook 3.2.0 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/facebook/3.2.0
+[DEBUG]  Detected iphone module: facebook 4.0.5 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/facebook/4.0.5
+[DEBUG]  Detected iphone module: ti.coremotion 1.0.1 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/ti.coremotion/1.0.1
+[DEBUG]  Detected iphone module: ti.coremotion 1.1.0 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/ti.coremotion/1.1.0
+[DEBUG]  Detected iphone module: ti.map 2.0.4 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/ti.map/2.0.4
+[DEBUG]  Detected iphone module: ti.map 2.2.0 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/ti.map/2.2.0
+[DEBUG]  Detected iphone module: ti.map 2.3.3 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/ti.map/2.3.3
+[DEBUG]  Detected iphone module: ti.touchid 1.0 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.0
+[DEBUG]  Detected iphone module: ti.touchid 1.1.0 @ /Users/jared/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.1.0
+[DEBUG]  Looking for Titanium module id=ti.map version=latest platform=iphone deploy-type=development
+[INFO]   Found Titanium module id=ti.map version=2.3.3 platform=iphone deploy-type=development path=/Users/jared/Library/Application Support/Titanium/modules/iphone/ti.map/2.3.3
+[DEBUG]  Detecting plugins in /Users/jared/workspaces/titanium/titanium-plantidapp/plugins
+[DEBUG]  Detected plugin: ti.alloy @ /Users/jared/workspaces/titanium/titanium-plantidapp/plugins/ti.alloy
+[DEBUG]  Detecting plugins in /Users/jared/Library/Application Support/Titanium/plugins
+[DEBUG]  Detected plugin: com.appcelerator.test @ /Users/jared/Library/Application Support/Titanium/plugins/com.appcelerator.test
+[DEBUG]  Looking for Titanium plugin id=ti.alloy version=1.0
+[INFO]   Found Titanium plugin id=ti.alloy version=1.0 
+[DEBUG]  Titanium SDK iOS directory: /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/iphone
+[INFO]   Deploy type: development
+[INFO]   Building for target: simulator
+[INFO]   Building using iOS SDK: 8.4
+[INFO]   Building for iOS Simulator: iPhone 6
+[DEBUG]  UDID: 54A30357-6114-466B-B1A4-9C86DCB1EAA1
+[DEBUG]  Simulator type: iphone
+[DEBUG]  Simulator version: 8.4
+[INFO]   Building for device family: iphone
+[DEBUG]  Setting Xcode target to Debug
+[DEBUG]  Setting Xcode build OS to iphonesimulator8.4
+[DEBUG]  Xcode installation: /Applications/Xcode.app/Contents/Developer
+[DEBUG]  iOS WWDR certificate: installed
+[INFO]   Minimum iOS version: 7.0
+[INFO]   Debugging disabled
+[INFO]   Profiler disabled
+[INFO]   Initiating prepare phase
+[INFO]   Found Alloy app in /Users/jared/workspaces/titanium/titanium-plantidapp/app
+[INFO]   Executing Alloy compile: /usr/local/bin/node /Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/.bin/alloy compile /Users/jared/workspaces/titanium/titanium-plantidapp/app --config platform=ios,version=0,simtype=none,devicefamily=iphone,deploytype=development,target=simulator --no-colors
+[DEBUG]         .__  .__                
+[DEBUG]  _____  |  | |  |   ____ ___.__.
+[DEBUG]  \__  \ |  | |  |  /  _ <   |  |
+[DEBUG]   / __ \|  |_|  |_(  <_> )___  |
+[DEBUG]  (____  /____/____/\____// ____|
+[DEBUG]       \/                 \/
+[DEBUG]  Alloy 1.6.2 by Appcelerator. The MVC app framework for Titanium.
+[DEBUG]  ----- CONFIGURATION -----
+[DEBUG]  raw config = "platform=ios,version=0,simtype=none,devicefamily=iphone,deploytype=development,target=simulator"
+[DEBUG]  platform = ios
+[DEBUG]  version = 0
+[DEBUG]  simtype = none
+[DEBUG]  devicefamily = iphone
+[DEBUG]  deploytype = development
+[DEBUG]  target = simulator
+[DEBUG]  project path = /Users/jared/workspaces/titanium/titanium-plantidapp
+[DEBUG]  app path = /Users/jared/workspaces/titanium/titanium-plantidapp/app
+[DEBUG]  
+[DEBUG]  ----- CONFIG.JSON -----
+[DEBUG]  dependencies = {}
+[INFO]   [config.json] config.json unchanged, using cached config.json...
+[DEBUG]  {
+[DEBUG]  "dependencies": {},
+[DEBUG]  "sourcemap": true,
+[DEBUG]  "autoStyle": false,
+[DEBUG]  "adapters": [
+[DEBUG]  "localStorage",
+[DEBUG]  "properties",
+[DEBUG]  "sql"
+[DEBUG]  ]
+[DEBUG]  }
+[DEBUG]  
+[DEBUG]  ----- CLEANING RESOURCES -----
+[DEBUG]  Removing orphaned controllers ...
+[DEBUG]  Removing orphaned models ...
+[DEBUG]  Removing orphaned styles ...
+[DEBUG]  Removing orphaned sync adapters...
+[DEBUG]  Removing orphaned assets and libs...
+[DEBUG]  
+[DEBUG]  ----- BASE RUNTIME FILES -----
+[TRACE]  SRC_DIR=/Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/alloy/Alloy/lib
+[TRACE]  Copying SRC_DIR/alloy/sync/sql.js --> Resources/iphone/alloy/sync/sql.js
+[TRACE]  Copying SRC_DIR/alloy/sync/properties.js --> Resources/iphone/alloy/sync/properties.js
+[TRACE]  Copying SRC_DIR/alloy/sync/localStorage.js --> Resources/iphone/alloy/sync/localStorage.js
+[TRACE]  Copying SRC_DIR/alloy/controllers/BaseController.js --> Resources/iphone/alloy/controllers/BaseController.js
+[TRACE]  Copying SRC_DIR/alloy/widget.js --> Resources/iphone/alloy/widget.js
+[TRACE]  Copying SRC_DIR/alloy/underscore.js --> Resources/iphone/alloy/underscore.js
+[TRACE]  Copying SRC_DIR/alloy.js --> Resources/iphone/alloy.js
+[TRACE]  
+[TRACE]  SRC_DIR=/Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/alloy/Alloy/common
+[TRACE]  Copying SRC_DIR/constants.js --> Resources/iphone/alloy/constants.js
+[TRACE]  
+[TRACE]  SRC_DIR=/Users/jared/workspaces/titanium/titanium-plantidapp/app/assets
+[TRACE]  
+[TRACE]  SRC_DIR=/Users/jared/workspaces/titanium/titanium-plantidapp/app/lib
+[TRACE]  Copying SRC_DIR/userData/data.json --> Resources/iphone/userData/data.json
+[TRACE]  Copying SRC_DIR/favoritesmgr.js --> Resources/iphone/favoritesmgr.js
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[DEBUG]  map:        "/Users/jared/workspaces/titanium/titanium-plantidapp/build/map/Resources/iphone/favoritesmgr.js.map"
+[TRACE]  
+[DEBUG]  
+[INFO]   ----- MVC GENERATION -----
+[INFO]   [global style] loading from cache...
+[INFO]   [annotation.xml] view processing...
+[INFO]   style:      "annotation.tss"
+[INFO]   view:       "annotation.xml"
+[INFO]   controller: "annotation.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/annotation.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/annotation.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/annotation.js"
+[INFO]   [directory.xml] view processing...
+[INFO]   style:      "directory.tss"
+[INFO]   view:       "directory.xml"
+[INFO]   controller: "directory.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/directory.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/directory.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/directory.js"
+[INFO]   [index.xml] view processing...
+[INFO]   style:      "index.tss"
+[INFO]   view:       "index.xml"
+[INFO]   controller: "index.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/index.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/index.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/index.js"
+[INFO]   [loader.xml] view processing...
+[INFO]   style:      "loader.tss"
+[INFO]   view:       "loader.xml"
+[INFO]   controller: "loader.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/loader.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/loader.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/loader.js"
+[INFO]   [profile.xml] view processing...
+[INFO]   style:      "profile.tss"
+[INFO]   view:       "profile.xml"
+[WARN]   <Activity> is only available in Android
+[WARN]   To get rid of this warning, add platform="android" to your <Activity> element
+[INFO]   controller: "profile.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/profile.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/profile.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/profile.js"
+[INFO]   
+[INFO]   [app.js] using cached app.js...
+[INFO]   
+[INFO]   ----- OPTIMIZING -----
+[INFO]   - iphone/alloy.js
+[TRACE]  processing "builtins" module...
+[TRACE]  processing "optimizer" module...
+[TRACE]  processing "compress" module...
+[INFO]   - iphone/favoritesmgr.js
+[TRACE]  processing "builtins" module...
+[TRACE]  processing "optimizer" module...
+[TRACE]  processing "compress" module...
+[INFO]   - iphone/alloy/sync/localStorage.js
+[TRACE]  processing "builtins" module...
+[TRACE]  processing "optimizer" module...
+[TRACE]  processing "compress" module...
+[INFO]   - iphone/alloy/sync/properties.js
+[TRACE]  processing "builtins" module...
+[TRACE]  processing "optimizer" module...
+[TRACE]  processing "compress" module...
+[INFO]   - iphone/alloy/sync/sql.js
+[TRACE]  processing "builtins" module...
+[TRACE]  processing "optimizer" module...
+[TRACE]  processing "compress" module...
+[TRACE]  
+[TRACE]  Benchmarking
+[TRACE]  ------------
+[TRACE]  [0.78465s] TOTAL
+[INFO]   
+[INFO]   Alloy compiled in 0.78465s
+[INFO]   Alloy compiler completed successfully
+[INFO]   Updating Xcode project configuration: project.xcconfig
+[DEBUG]  Setting Info.plist CFBundleVersion to 0.1
+[DEBUG]  Setting Info.plist CFBundleShortVersionString to 0.1
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/appicon.png
+[INFO]   Initiating Xcode pre-compile phase
+[DEBUG]  Ignoring /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone
+[DEBUG]  Ignoring /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/.DS_Store
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-568@2x.jpg => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/Default-568@2x.jpg
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-667@2x.jpg => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/Default-667@2x.jpg
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-Landscape-736h@3x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/Default-Landscape-736h@3x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default-Portrait-736h@3x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/Default-Portrait-736h@3x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/Default.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Default@2x.jpg => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/Default@2x.jpg
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Icon-50.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/Icon-50.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Icon-50@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/Icon-50@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Icon-Small-50.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/Icon-Small-50.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Icon-Small.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/Icon-Small.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/Icon-Small@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/Icon-Small@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-72.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/appicon-72.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon-72@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/appicon-72@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/appicon.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/appicon@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/appicon@2x.png
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/fonts/icomoon.ttf => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/fonts/icomoon.ttf
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/fonts/icomoon.woff => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/fonts/icomoon.woff
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/iTunesArtwork => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/iTunesArtwork
+[DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/iTunesArtwork@2x => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/iTunesArtwork@2x
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight01.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight01.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight01@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight01@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight02.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight02.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight02@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight02@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight03.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight03.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight03@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight03@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight04.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight04.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight04@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight04@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight05.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight05.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight05@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight05@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight06.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight06.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight06@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight06@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight07.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight07.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight07@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight07@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight08.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight08.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight08@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight08@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight09.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight09.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight09@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight09@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight10.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight10.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight10@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight10@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight11.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight11.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight11@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight11@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight12.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight12.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight12@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight12@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight13.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight13.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight13@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight13@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight14.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight14.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight14@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight14@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight15.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight15.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight15@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight15@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight16.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight16.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight16@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight16@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight17.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight17.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight17@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight17@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight18.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight18.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight18@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight18@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight19.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight19.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight19@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight19@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight20.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight20.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight20@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight20@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight21.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight21.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight21@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight21@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight22.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight22.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight22@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight22@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight23.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight23.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight23@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight23@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight24.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight24.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight24@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight24@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight25.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight25.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight25@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight25@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke01.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke01.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke01@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke01@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke02.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke02.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke02@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke02@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke03.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke03.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke03@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke03@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke04.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke04.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke04@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke04@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke05.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke05.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke05@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke05@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke06.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke06.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke06@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke06@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke07.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke07.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke07@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke07@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke08.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke08.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke08@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke08@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke09.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke09.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke09@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke09@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke10.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke10.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke10@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke10@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke11.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke11.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke11@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke11@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke12.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke12.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke12@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke12@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke13.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke13.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke13@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke13@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke14.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke14.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke14@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke14@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke15.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke15.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke15@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke15@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke16.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke16.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke16@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke16@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke17.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke17.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke17@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke17@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke18.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke18.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke18@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke18@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke19.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke19.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke19@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke19@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke20.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke20.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke20@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke20@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke21.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke21.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke21@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke21@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke22.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke22.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke22@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke22@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke23.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke23.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke23@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke23@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke24.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke24.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke24@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke24@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke25.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke25.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke25@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke25@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke26.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke26.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke26@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke26@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke27.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke27.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke27@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke27@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke28.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke28.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke28@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke28@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke29.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke29.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke29@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke29@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke30.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke30.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke30@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke30@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke31.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke31.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke31@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke31@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke32.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke32.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke32@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke32@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke33.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke33.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke33@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke33@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke34.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke34.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke34@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke34@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke35.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke35.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke35@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke35@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke36.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke36.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke36@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke36@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke37.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke37.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketSmoke/RocketSmoke37@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketSmoke/RocketSmoke37@2x.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/userData/data.json => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/userData/data.json
+[INFO]   Processing JavaScript files
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/CFG.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/CFG.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/app.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/app.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/backbone.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/backbone.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/constants.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/constants.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/BaseController.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/BaseController.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/annotation.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/annotation.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/directory.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/directory.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/index.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/index.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/loader.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/loader.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/profile.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/profile.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/annotation.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/annotation.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/directory.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/directory.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/index.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/index.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/loader.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/loader.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/profile.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/profile.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/localStorage.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/sync/localStorage.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/properties.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/sync/properties.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/sql.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/sync/sql.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/underscore.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/underscore.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/widget.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/widget.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/favoritesmgr.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/favoritesmgr.js
+[INFO]   Processing Titanium namespace resources
+[DEBUG]  Copying /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/iphone/modules/ui/images => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/modules/ui/images
+[INFO]   Skipping xcodebuild
+[INFO]   Finished building the application in 1s 517ms
+[INFO]   Launching iOS Simulator
+[DEBUG]  [ioslib] Removing old log file: /Users/jared/Library/Developer/CoreSimulator/Devices/54A30357-6114-466B-B1A4-9C86DCB1EAA1/data/Containers/Data/Application/DD2119F9-2296-4324-AAD5-8BE2790299AB/Documents/d4858b22-5f39-4b01-9bbb-7c2ad6962770.log
+[DEBUG]  [ioslib] Executing: /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/node_modules/ioslib/lib/ios-sim "launch" "/Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app" "--verbose" "--xcode-dir" "/Applications/Xcode.app/Contents/Developer" "--udid" "54A30357-6114-466B-B1A4-9C86DCB1EAA1" "--timeout" "180"
+[DEBUG]  [ioslib] Executing: osascript "/Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/node_modules/ioslib/lib/iphone_sim_activate.scpt" "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app"
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7feb22d06320> specified by app path /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7feb22d0a760> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stderr-pipe-1442105249'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stdout-pipe-1442105249'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] using device family iphone
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 328DF731-462D-4170-B782-A62BAC6C39DE == 54A30357-6114-466B-B1A4-9C86DCB1EAA1
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing DED94ED6-E0BC-4DFE-9118-0442484AD9FC == 54A30357-6114-466B-B1A4-9C86DCB1EAA1
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing F3836B57-BC20-43D4-A8E3-31289623176D == 54A30357-6114-466B-B1A4-9C86DCB1EAA1
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing CDF885B8-0E31-435C-9BF0-6313E15E8B4A == 54A30357-6114-466B-B1A4-9C86DCB1EAA1
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 54A30357-6114-466B-B1A4-9C86DCB1EAA1 == 54A30357-6114-466B-B1A4-9C86DCB1EAA1
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] set device to : iPhone 6
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Session started
+[DEBUG]  [ioslib] Found application log file: /Users/jared/Library/Developer/CoreSimulator/Devices/54A30357-6114-466B-B1A4-9C86DCB1EAA1/data/Containers/Data/Application/6786EA11-47B4-49A9-8312-102AC55417AD/Documents/d4858b22-5f39-4b01-9bbb-7c2ad6962770.log
+[INFO]   Project built successfully in 6s 388ms
