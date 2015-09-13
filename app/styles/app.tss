@@ -12,7 +12,7 @@
 'Window': {
     backgroundColor: '#fff', // white background instead of default transparent
     titleAttributes:  {
-        color: "#C41230"
+        color: "#83a614"
    }
 },
 
@@ -263,6 +263,9 @@
 
 ".red":{
 	color: '#C41230'
+}
+".green":{
+	color: '#83a614'
 }
 
 /**

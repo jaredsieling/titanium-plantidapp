@@ -2,7 +2,7 @@
 	<!--
 		This view wraps all of the child views/lists etc. Creates a base layout, vertically aligned.
 	-->
-	<Window id="wrapper" class="vgroup" title="Garden">
+	<Window id="wrapper" class="vgroup" title="Virtual Garden">
 		
 		<!-- 
 		Menu Item to open the bookmarks view
@@ -41,27 +41,14 @@
 				<ItemTemplate id="userTemplate" name="userTemplate" class="template">
 					<View class="main-buffer">
 						<ImageView id="userPhoto" bindId="userPhoto" class="mainPlantImg" />
-						<View platform="android" class="smoothAvatarBorderRadius" />
-						<View class="vgroup left size">
-							<Label id="name" bindId="name" class="title" />
-							<Label id="userCompany" bindId="userCompany" class="subtitle" />
-						</View>
-						<View class="gray-line bottom"/>
 					</View>
 				</ItemTemplate>
 				
 				<!-- favoriteTemplate - this is the ListItem template for contacts that have been bookmarked -->
 				<ItemTemplate id="favoriteTemplate" name="favoriteTemplate" class="template">
-					<View class="left-buffer">
-						<ImageView id="userPhoto" bindId="userPhoto" class="avatar" />
-						<View platform="android" class="smoothAvatarBorderRadius" />
-						<View class="vgroup left size">
-							<Label id="userName" bindId="userName" class="title" />
-							<Label id="userEmail" bindId="userEmail" class="subtitle" />
-							<Label id="userCompany" bindId="userCompany" class="subtitle" />
-						</View>
+					<View class="main-buffer">
+						<ImageView id="userPhoto" bindId="userPhoto" class="mainPlantImg" />
 						<Label class="favorite" />
-						<View class="gray-line bottom"/>
 					</View>
 				</ItemTemplate>	
 			</Templates>

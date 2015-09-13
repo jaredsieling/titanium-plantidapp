@@ -24,12 +24,12 @@ function Controller() {
     }
     var $ = this;
     var exports = {};
-    $.__views.__alloyId31 = Alloy.createController("directory", {
-        id: "__alloyId31"
+    $.__views.__alloyId16 = Alloy.createController("directory", {
+        id: "__alloyId16"
     });
     $.__views.nav = Ti.UI.iOS.createNavigationWindow({
         backgroundColor: "#fff",
-        window: $.__views.__alloyId31.getViewEx({
+        window: $.__views.__alloyId16.getViewEx({
             recurse: true
         }),
         id: "nav"

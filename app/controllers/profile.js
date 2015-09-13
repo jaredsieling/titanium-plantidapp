@@ -33,12 +33,8 @@ var _args = arguments[0] || {},
  * Check for passed in properties of the contact, and update the 
  * Label text and ImageView image values as required
  */
-$.name.text = _args.firstName + " " + _args.lastName;
-$.company.text = _args.company;
-$.phone.text = _args.phone;
-$.email.text = _args.email;
-$.im.text = _args.im || _args.firstName+"."+_args.lastName;
-
+$.name.text = _args.name;
+$.sci_name.text = _args.sci_name;
 
 /**
  * Set the Map Region for the Map Module so that it is at the right zoom level
@@ -74,7 +70,7 @@ $.mapview.addAnnotation(mapAnnotation);
  * Check that the contact is not already a favorite, and update the favorites button
  * title as required.
  */
-$FM.exists(_args.id) && $.addFavoriteBtn.setTitle("- Remove From Favorites");
+$FM.exists(_args.id) && $.addFavoriteBtn.setTitle("- Remove From Planted");
 
 
 /**
@@ -201,7 +197,7 @@ function toggleFavorite(){
 		 * Then add this user to the favorites array, and update the button title for favorites
 		 */
 		$FM.add(_args.id);
-	    $.addFavoriteBtn.setTitle("- Remove From Favorites");
+	    $.addFavoriteBtn.setTitle("- Remove From Planted");
 	}
 	else{
 		
@@ -215,7 +211,7 @@ function toggleFavorite(){
 		 * and update the button title accordingly
 		 */
 		$FM.remove(_args.id);
-	    $.addFavoriteBtn.setTitle("+ Add To Favorites"); 
+	    $.addFavoriteBtn.setTitle("+ Add To Planted"); 
 	}
 	
 	/**

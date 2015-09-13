@@ -28,10 +28,9 @@
 			
 				<!-- User Information -->
 				<View class="vgroup top size">
-					<Label id="name" class='h3 red top-buffer no-touch' >Kelly Smith</Label>
-					<Label id="job" class='h5 gray no-touch' >Account Rep</Label>
-					<Label id="company" class='h5 gray no-touch' >Appcelerator, Inc</Label>
-					<Button id="addFavoriteBtn" class="h4 span-width top-buffer" onClick="toggleFavorite" textid="bookmarkBtn">+ Add To Favorites</Button>
+					<Label id="name" class='h3 green top-buffer no-touch' >Plant Name</Label>
+					<Label id="sci_name" class='h5 gray no-touch' >Scientific Name</Label>
+					<Button id="addFavoriteBtn" class="h4 span-width top-buffer" onClick="toggleFavorite" textid="bookmarkBtn">+ Add To Planted</Button>
 				</View>
 				
 				<!-- User Actions --->
@@ -43,23 +42,25 @@
 				
 				<View class='separator' />
 				
-				<!-- Contact Information -->
 			 	<View class='buffer vgroup size'>
 					<View class='hgroup size left-buffer top-buffer'>
-						<Label class="h3 icon icon-phone icon-small red left top" />
-						<Label id="phone" class="h6 gray left-buffer">512-555-1212</Label>
+						<Label class="h3 icon icon-calendar icon-small green left top" />
+						<Label class="h5 gray left-buffer right-buffer">Watering Schedule</Label>
 					</View>
 					<View class='hgroup size left-buffer top-buffer'>
-						<Label class="h3 icon icon-email icon-small red left top" />
-						<Label id="email" class="h6 gray left-buffer">kelly.smith@appcelerator.com</Label>
+						<Label class="h6 gray left-buffer right-buffer">Water this plant 2-3 quarts every 2-3 days. If you happen to forget a day, don't over water this thing, or it will get angry at you.'</Label>
+					</View>
+				</View>
+				
+				<View class='separator' />
+				
+			 	<View class='buffer vgroup size'>
+					<View class='hgroup size left-buffer top-buffer'>
+						<Label class="h3 icon icon-message icon-small green left top" />
+						<Label class="h5 gray left-buffer right-buffer">Soil Care</Label>
 					</View>
 					<View class='hgroup size left-buffer top-buffer'>
-						<Label class="h3 icon icon-message icon-small red left top" />
-						<Label id="im" class="h6 gray left-buffer right-buffer">kelly.smith</Label>
-					</View>
-					<View class='hgroup size left-buffer top-buffer'>
-						<Label class="h3 icon icon-calendar icon-small red left top" />
-						<Label id="start_date" class="h6 gray left-buffer right-buffer">July 27, 2001</Label>
+						<Label class="h6 gray left-buffer right-buffer"></Label>
 					</View>
 				</View>
 			</ScrollView>	
