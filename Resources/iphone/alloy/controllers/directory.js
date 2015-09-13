@@ -64,8 +64,15 @@ function Controller() {
                 }
             });
             $.wrapper.rightNavButton.addEventListener("click", function() {
-                Alloy.Globals.Navigator.open("camera", {});
-                Ti.API.info("Camera button pressed.");
+                var dialog = Ti.UI.createAlertDialog({
+                    cancel: 2,
+                    buttonNames: [ "Camera", "Gallery", "Cancel" ],
+                    message: "How?"
+                });
+                dialog.addEventListener("click", function(e) {
+                    e.index !== e.source.cancel && (0 == e.index ? openCamera() : openGallery());
+                });
+                dialog.show();
             });
         }
     }
@@ -80,6 +87,41 @@ function Controller() {
         "+ Planted" === e.action ? $FM.add(id) : $FM.remove(id);
         $.listView.editing = false;
         init();
+    }
+    function openCamera() {
+        Titanium.Media.showCamera({
+            success: function() {
+                Alloy.Globals.Navigator.open("profile", users[1]);
+            },
+            cancel: function() {},
+            error: function(error) {
+                var a = Titanium.UI.createAlertDialog({
+                    title: "Camera"
+                });
+                a.setMessage(error.code == Titanium.Media.NO_CAMERA ? "Please run this test on device" : "Unexpected error: " + error.code);
+                a.show();
+            },
+            saveToPhotoGallery: true,
+            allowEditing: true,
+            mediaTypes: [ Ti.Media.MEDIA_TYPE_VIDEO, Ti.Media.MEDIA_TYPE_PHOTO ]
+        });
+    }
+    function openGallery() {
+        Titanium.Media.openPhotoGallery({
+            success: function() {
+                Alloy.Globals.Navigator.open("profile", users[2]);
+            },
+            cancel: function() {},
+            error: function(error) {
+                var a = Titanium.UI.createAlertDialog({
+                    title: "Camera"
+                });
+                a.setMessage(error.code == Titanium.Media.NO_CAMERA ? "Please run this test on device" : "Unexpected error: " + error.code);
+                a.show();
+            },
+            allowEditing: true,
+            mediaTypes: [ Ti.Media.MEDIA_TYPE_VIDEO, Ti.Media.MEDIA_TYPE_PHOTO ]
+        });
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "directory";
@@ -146,9 +188,10 @@ function Controller() {
             return __alloyId6;
         }(),
         properties: {
-            left: 5,
-            right: 5,
-            top: 10
+            left: 10,
+            right: 10,
+            top: 10,
+            bottom: 10
         }
     };
     __alloyId3.push(__alloyId5);
@@ -196,9 +239,10 @@ function Controller() {
             return __alloyId12;
         }(),
         properties: {
-            left: 5,
-            right: 5,
-            top: 10
+            left: 10,
+            right: 10,
+            top: 10,
+            bottom: 10
         }
     };
     __alloyId9.push(__alloyId11);

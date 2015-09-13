@@ -1,5 +1,5 @@
 
-Sun Sep 13 2015 14:12:06 GMT-0500 (CDT)
+Sun Sep 13 2015 15:15:04 GMT-0500 (CDT)
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.1.1.GA --project-dir /Users/jared/workspaces/titanium/titanium-plantidapp --target simulator --ios-version 8.4 --device-family iphone --deploy-type development --sim-type iphone --sim-version 8.4 --device-id 54A30357-6114-466B-B1A4-9C86DCB1EAA1 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51604 --plugin-paths /Users/jared/.appcelerator/install/4.1.3/package/node_modules --config-file /var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T/build-1442171523076.json --no-banner
+  /usr/local/bin/node /Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.1.1.GA --project-dir /Users/jared/workspaces/titanium/titanium-plantidapp --target simulator --ios-version 8.4 --device-family iphone --deploy-type development --sim-type iphone --sim-version 8.4 --device-id 54A30357-6114-466B-B1A4-9C86DCB1EAA1 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 49271 --plugin-paths /Users/jared/.appcelerator/install/4.1.3/package/node_modules --config-file /var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T/build-1442175301465.json --no-banner
 
 [DEBUG]  Detecting modules in /Users/jared/Library/Application Support/Titanium/modules
 [DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/jared/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
@@ -243,9 +243,9 @@ Command
 [TRACE]  
 [TRACE]  Benchmarking
 [TRACE]  ------------
-[TRACE]  [0.86422s] TOTAL
+[TRACE]  [0.83678s] TOTAL
 [INFO]   
-[INFO]   Alloy compiled in 0.86422s
+[INFO]   Alloy compiled in 0.83678s
 [INFO]   Alloy compiler completed successfully
 [INFO]   Updating Xcode project configuration: project.xcconfig
 [DEBUG]  Setting Info.plist CFBundleVersion to 0.1
@@ -434,15 +434,15 @@ Command
 [INFO]   Processing Titanium namespace resources
 [DEBUG]  Copying /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/iphone/modules/ui/images => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/modules/ui/images
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 1s 699ms
+[INFO]   Finished building the application in 1s 459ms
 [INFO]   Launching iOS Simulator
-[DEBUG]  [ioslib] Removing old log file: /Users/jared/Library/Developer/CoreSimulator/Devices/54A30357-6114-466B-B1A4-9C86DCB1EAA1/data/Containers/Data/Application/8808F7DB-6F3D-41A2-8557-5BF80D485EDA/Documents/d4858b22-5f39-4b01-9bbb-7c2ad6962770.log
+[DEBUG]  [ioslib] Removing old log file: /Users/jared/Library/Developer/CoreSimulator/Devices/54A30357-6114-466B-B1A4-9C86DCB1EAA1/data/Containers/Data/Application/67338695-CD04-48C5-9ED2-7CFBE93AE040/Documents/d4858b22-5f39-4b01-9bbb-7c2ad6962770.log
 [DEBUG]  [ioslib] Executing: /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/node_modules/ioslib/lib/ios-sim "launch" "/Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app" "--verbose" "--xcode-dir" "/Applications/Xcode.app/Contents/Developer" "--udid" "54A30357-6114-466B-B1A4-9C86DCB1EAA1" "--timeout" "180"
 [DEBUG]  [ioslib] Executing: osascript "/Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/node_modules/ioslib/lib/iphone_sim_activate.scpt" "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app"
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7fc3e1e18ab0> specified by app path /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7fc3e1f1a0b0> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stderr-pipe-1442171528'
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stdout-pipe-1442171528'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7fa4f350ebb0> specified by app path /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7fa4f3641d80> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stderr-pipe-1442175306'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stdout-pipe-1442175306'
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] using device family iphone
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 328DF731-462D-4170-B782-A62BAC6C39DE == 54A30357-6114-466B-B1A4-9C86DCB1EAA1
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing DED94ED6-E0BC-4DFE-9118-0442484AD9FC == 54A30357-6114-466B-B1A4-9C86DCB1EAA1
@@ -451,5 +451,5 @@ Command
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 54A30357-6114-466B-B1A4-9C86DCB1EAA1 == 54A30357-6114-466B-B1A4-9C86DCB1EAA1
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] set device to : iPhone 6
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Session started
-[DEBUG]  [ioslib] Found application log file: /Users/jared/Library/Developer/CoreSimulator/Devices/54A30357-6114-466B-B1A4-9C86DCB1EAA1/data/Containers/Data/Application/A04EC7C4-7919-467F-9D39-60A0ADF7465C/Documents/d4858b22-5f39-4b01-9bbb-7c2ad6962770.log
-[INFO]   Project built successfully in 7s 594ms
+[DEBUG]  [ioslib] Found application log file: /Users/jared/Library/Developer/CoreSimulator/Devices/54A30357-6114-466B-B1A4-9C86DCB1EAA1/data/Containers/Data/Application/D43C884B-C39C-411A-8857-89F96A78E36C/Documents/d4858b22-5f39-4b01-9bbb-7c2ad6962770.log
+[INFO]   Project built successfully in 6s 298ms
