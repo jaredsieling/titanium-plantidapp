@@ -1,0 +1,6 @@
+<Alloy>
+	<Window id="cameraWindow" class="vgroup" title="Garden">
+        	<ImageView id="cameraId" image="/images/Camera/camera.png" onClick="openCamera"/>
+        	<ImageView id="gallery" image="/images/Camera/gallery.jpg" onClick="openGallery"/>
+	</Window>
+</Alloy>
