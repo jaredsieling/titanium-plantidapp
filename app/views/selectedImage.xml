@@ -1,4 +1,11 @@
 <Alloy>
     <Window id="selectedImage" title="Selected plant" backgroundColor="#fff">
+    	<ImageView id="imageSpot">
+    	</ImageView>
+			<!-- User Actions --->
+		<View class="hgroup top-buffer size">
+			<Label id="callBtn" class="icon icon-btn icon-phone"  onClick="openProfile" />
+			<Label id="emailBtn" class="icon icon-btn icon-email" onClick="openProfile" />
+		</View>
     </Window>
 </Alloy>

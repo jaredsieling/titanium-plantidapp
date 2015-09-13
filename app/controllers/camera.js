@@ -18,7 +18,8 @@ function openCamera(e)
 			var navGroup = Titanium.UI.iOS.createNavigationWindow({
   		 		window: selectedImage
 			});
-			navGroup.open();
+			Alloy.Globals.Navigator.open("selectedImage", {});
+			//navGroup.open();
 			
 		} else {
 			alert("got the wrong type back ="+event.mediaType);
@@ -57,12 +58,13 @@ function openGallery(e)
 			});
 			
 			var selectedImage = Alloy.createController('selectedImage').getView();
-			selectedImage.add(imageView);
+			selectedImage.add (imageView);
 			
 			var navGroup = Titanium.UI.iOS.createNavigationWindow({
   		 		window: selectedImage
 			});
-			navGroup.open();
+			//Alloy.Globals.Navigator.open("selectedImage", {arg1: imageView});
+			navGroup.open({arg1: imageView});
 			
 		} else {
 			alert("got the wrong type back ="+event.mediaType);

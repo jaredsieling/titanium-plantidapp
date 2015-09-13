@@ -18,10 +18,12 @@ function Controller() {
                     });
                     var selectedImage = Alloy.createController("selectedImage").getView();
                     selectedImage.add(imageView);
-                    var navGroup = Titanium.UI.iOS.createNavigationWindow({
-                        window: selectedImage
-                    });
-                    navGroup.open();
+                    {
+                        Titanium.UI.iOS.createNavigationWindow({
+                            window: selectedImage
+                        });
+                    }
+                    Alloy.Globals.Navigator.open("selectedImage", {});
                 } else alert("got the wrong type back =" + event.mediaType);
             },
             cancel: function() {},
@@ -50,7 +52,9 @@ function Controller() {
                     var navGroup = Titanium.UI.iOS.createNavigationWindow({
                         window: selectedImage
                     });
-                    navGroup.open();
+                    navGroup.open({
+                        arg1: imageView
+                    });
                 } else alert("got the wrong type back =" + event.mediaType);
             },
             cancel: function() {},
