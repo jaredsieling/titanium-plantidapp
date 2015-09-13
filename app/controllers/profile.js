@@ -49,9 +49,9 @@ $.social.text = _args.social;
 	$.mapview.setRegion({
 		latitude: lat || 30.631256,
 		longitude: _args.longitude || -97.675422,
-		latitudeDelta:2,
-		longitudeDelta:2,
-		zoom:5,
+		latitudeDelta:32,
+		longitudeDelta:32,
+		zoom:6,
 		tilt:45
 	});
 
