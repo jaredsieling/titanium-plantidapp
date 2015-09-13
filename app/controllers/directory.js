@@ -195,11 +195,11 @@ function init(){
 			
 		if(OS_IOS){
 			$.wrapper.rightNavButton = Ti.UI.createLabel({
-				text: "\ue601",
+				text: "\uf030",
 				color: "#fff",
 				font:{
 					fontFamily:"icomoon",
-					fontSize:36
+					fontSize:24
 				}
 			});
 			

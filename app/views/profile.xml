@@ -30,37 +30,53 @@
 				<View class="vgroup top size">
 					<Label id="name" class='h3 green top-buffer no-touch' >Plant Name</Label>
 					<Label id="sci_name" class='h5 gray no-touch' >Scientific Name</Label>
-					<Button id="addFavoriteBtn" class="h4 span-width top-buffer" onClick="toggleFavorite" textid="bookmarkBtn">+ Add To Planted</Button>
+					<Label id="native" class='h5 gray no-touch' >Native Lands</Label>
 				</View>
 				
 				<!-- User Actions --->
 				<View class="hgroup top-buffer size">
-					<Label id="callBtn" class="icon icon-btn icon-phone"  onClick="callContact" />
-					<Label id="emailBtn" class="icon icon-btn icon-email" onClick="emailContact" />
-					<Label id="msgBtn" class="icon icon-btn icon-message"  />
+					<Label id="callBtn" class="icon icon-btn icon-shopping-cart"  onClick="buyPlant" />
+					<Label id="emailBtn" class="icon icon-btn icon-question" />
+					<Label id="msgBtn" class="icon icon-btn icon-shared"  />
+				</View>
+				
+				<View class="vgroup top size">
+					<Button id="addFavoriteBtn" class="h4 span-width top-buffer" onClick="toggleFavorite" textid="bookmarkBtn">+ Add To Planted</Button>
+				</View>
+				
+				<View class='separator' />
+				
+				<View class='buffer vgroup size'>
+					<View class='hgroup size left-buffer top-buffer'>
+						<Label class="h3 icon icon-small green left top" text="\uf073"/>
+						<Label class="h4 green left-buffer right-buffer">Watering Schedule</Label>
+					</View>
+					<View class='hgroup size left-buffer top-buffer'>
+						<Label id="water" class="h6 gray left-buffer right-buffer">Water this plant 2-3 quarts every 2-3 days. If you happen to forget a day, don't over water this thing, or it will get angry at you.'</Label>
+					</View>
+				</View>
+				
+				<View class='separator' />
+				
+				<View class='buffer vgroup size'>
+					<View class='hgroup size left-buffer top-buffer'>
+						<Label class="h3 icon icon-small green left top" text="\uf075" />
+						<Label class="h4 green left-buffer right-buffer">Light</Label>
+					</View>
+					<View class='hgroup size left-buffer top-buffer'>
+						<Label id="light" class="h6 gray left-buffer right-buffer">Water this plant 2-3 quarts every 2-3 days. If you happen to forget a day, don't over water this thing, or it will get angry at you.'</Label>
+					</View>
 				</View>
 				
 				<View class='separator' />
 				
 			 	<View class='buffer vgroup size'>
 					<View class='hgroup size left-buffer top-buffer'>
-						<Label class="h3 icon icon-calendar icon-small green left top" />
-						<Label class="h5 gray left-buffer right-buffer">Watering Schedule</Label>
-					</View>
-					<View class='hgroup size left-buffer top-buffer'>
-						<Label class="h6 gray left-buffer right-buffer">Water this plant 2-3 quarts every 2-3 days. If you happen to forget a day, don't over water this thing, or it will get angry at you.'</Label>
-					</View>
-				</View>
-				
-				<View class='separator' />
-				
-			 	<View class='buffer vgroup size'>
-					<View class='hgroup size left-buffer top-buffer'>
-						<Label class="h3 icon icon-message icon-small green left top" />
+						<Label class="h3 icon icon-message icon-small green left top" text="\uf073" />
 						<Label class="h5 gray left-buffer right-buffer">Soil Care</Label>
 					</View>
 					<View class='hgroup size left-buffer top-buffer'>
-						<Label class="h6 gray left-buffer right-buffer"></Label>
+						<Label id="soil" class="h6 gray left-buffer right-buffer"></Label>
 					</View>
 				</View>
 			</ScrollView>	

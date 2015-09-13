@@ -35,6 +35,10 @@ var _args = arguments[0] || {},
  */
 $.name.text = _args.name;
 $.sci_name.text = _args.sci_name;
+$.native.text = _args.native;
+$.water.text = _args.water;
+$.soil.text = _args.soil;
+$.light.text = _args.light;
 
 /**
  * Set the Map Region for the Map Module so that it is at the right zoom level
@@ -135,46 +139,43 @@ function emailContact() {
 /**
  * Function to quickly call the contact from the Profile Screen
  */
-function callContact(){
+function buyPlant(){
 	
-	/**
-	 * Appcelerator Analytics Call
-	 */
-	Ti.Analytics.featureEvent(Ti.Platform.osname+".profile.callContactButton.clicked");
-	
+	Ti.Platform.openURL("http://www.amazon.com/Bonsai-Boys-Juniper-Water-Pot/dp/B00LSNF1ES/ref=sr_1_8?ie=UTF8&qid=1442157122&sr=8-8&keywords=10+year+old+juniper+bonsai");
+
 	/**
 	 * Before we send the phone number to the platform for handling, lets first verify
 	 * with the user they meant to call the contact with an Alert Dialog
 	 * DOCS: http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.AlertDialog
 	 */
-	var dialog = Ti.UI.createAlertDialog({
-	    cancel: 0,
-	    buttonNames: ['Cancel', 'Ok'],
-	    message: "Are you sure you want to call "+_args.firstName+" at "+_args.phone
-	});
+	// var dialog = Ti.UI.createAlertDialog({
+	    // cancel: 0,
+	    // buttonNames: ['Cancel', 'Ok'],
+	    // message: "Are you sure you want to call "+_args.firstName+" at "+_args.phone
+	// });
 	
 	/**
 	 * Event Handler associated with clicking the Alert Dialog, this handles the 
 	 * actual call to the platform to make the phone call
 	 */
-	dialog.addEventListener('click', function(e){
-		 if (e.index !== e.source.cancel){
-	    
-	     	// IF WE ARE BUILDING FOR DEVELOPMENT PURPOSES - TRY CALLING A FAKE NUMBER
-	      	if(ENV_DEV){
-	      		Ti.Platform.openURL("tel:+15125551212");
-	      	}
-	      	// ELSE IF WE ARE BUILDING PRODUCTION - THEN USE THE LISTED NUMBER
-	      	else if(ENV_PRODUCTION){
-	      		Ti.Platform.openURL("tel:"+_args.phone);
-	      	}
-	    }  
-	});
+	// dialog.addEventListener('click', function(e){
+		 // if (e.index !== e.source.cancel){
+// 	    
+	     	// // IF WE ARE BUILDING FOR DEVELOPMENT PURPOSES - TRY CALLING A FAKE NUMBER
+	      	// if(ENV_DEV){
+	      		// Ti.Platform.openURL("http://www.amazon.com/Bonsai-Boys-Juniper-Water-Pot/dp/B00LSNF1ES/ref=sr_1_8?ie=UTF8&qid=1442157122&sr=8-8&keywords=10+year+old+juniper+bonsai");
+	      	// }
+	      	// // ELSE IF WE ARE BUILDING PRODUCTION - THEN USE THE LISTED NUMBER
+	      	// else if(ENV_PRODUCTION){
+	      		// Ti.Platform.openURL("http://www.amazon.com/Bonsai-Boys-Juniper-Water-Pot/dp/B00LSNF1ES/ref=sr_1_8?ie=UTF8&qid=1442157122&sr=8-8&keywords=10+year+old+juniper+bonsai");
+	      	// }
+	    // }  
+	// });
 	
 	/**
 	 * After everything is setup, we show the Alert Dialog to the User
 	 */
-	dialog.show();
+	// dialog.show();
 	 
 };
 

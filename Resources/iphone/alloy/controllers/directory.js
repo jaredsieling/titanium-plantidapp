@@ -56,11 +56,11 @@ function Controller() {
         _args.title && ($.wrapper.title = _args.title);
         if (_args.restrictToFavorites) true && ($.searchBar.showBookmark = false); else {
             $.wrapper.rightNavButton = Ti.UI.createLabel({
-                text: "",
+                text: "",
                 color: "#fff",
                 font: {
                     fontFamily: "icomoon",
-                    fontSize: 36
+                    fontSize: 24
                 }
             });
             $.wrapper.rightNavButton.addEventListener("click", function() {

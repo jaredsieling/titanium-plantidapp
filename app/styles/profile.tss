@@ -74,15 +74,24 @@
 ".icon-calendar":{
 	text: "\uf073"
 },
+".icon-shopping-cart":{
+	text: "\uf207"
+},
+".icon-question":{
+	text: "\uf128"
+},
+".icon-shared":{
+	text: "\uf064"
+},
 
 ".icon-btn":{
 	height: 60,
 	width: 60,
-	color: "#C41230",
+	color: "#83a614",
 	borderRadius: 30,
 	borderWidth: 2,
-	borderColor: "#C41230",
-	backgroundColor: "#33C41230",
+	borderColor: "#83a614",
+	backgroundColor: "#3383a614",
 	textAlign: "center",
 	font:{
 		fontSize: 24
