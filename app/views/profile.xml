@@ -36,7 +36,7 @@
 				<!-- User Actions --->
 				<View class="hgroup top-buffer size">
 					<Label id="callBtn" class="icon icon-btn" text="\uf07a"  onClick="buyPlant" />
-					<Label id="emailBtn" class="icon icon-btn" text="\uf128" />
+					<Label id="emailBtn" class="icon icon-btn" text="\uf253" />
 					<Label id="msgBtn" class="icon icon-btn" text="\uf064" />
 				</View>
 				
@@ -85,7 +85,7 @@
 			 	<View class='buffer vgroup size'>
 					<View class='hgroup size left-buffer top-buffer'>
 						<Label class="h3 icon icon-small green left top" text="\uf086" />
-						<Label class="h4 green left-buffer right-buffer">What other's say...'</Label>
+						<Label class="h4 green left-buffer right-buffer">What other's say...</Label>
 					</View>
 					<View class='hgroup size left-buffer top-buffer'>
 						<Label id="social" class="h6 gray left-buffer right-buffer"></Label>
