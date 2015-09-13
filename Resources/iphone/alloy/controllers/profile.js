@@ -42,6 +42,38 @@ function Controller() {
         }
         Ti.App.fireEvent("refresh-data");
     }
+    function init() {
+        $.profile.rightNavButton = Ti.UI.createLabel({
+            text: "",
+            color: "#fff",
+            font: {
+                fontFamily: "icomoon",
+                fontSize: 36
+            }
+        });
+        $.profile.rightNavButton.addEventListener("click", function() {
+            var camera = Alloy.createController("camera").getView();
+            var navGroup = Titanium.UI.iOS.createNavigationWindow({
+                window: camera
+            });
+            navGroup.open();
+        });
+        $.profile.leftNavButton = Ti.UI.createLabel({
+            text: "Virtual Garden",
+            color: "#fff",
+            font: {
+                fontFamily: "icomoon",
+                fontSize: 12
+            }
+        });
+        $.profile.leftNavButton.addEventListener("click", function() {
+            var directory = Alloy.createController("directory").getView();
+            var navGroup = Titanium.UI.iOS.createNavigationWindow({
+                window: directory
+            });
+            navGroup.open();
+        });
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "profile";
     this.args = arguments[0] || {};
@@ -67,9 +99,9 @@ function Controller() {
         barColor: "#83a614",
         layout: "vertical",
         theme: "appcelerator",
+        id: "profile",
         opacity: "0.0",
-        title: "Details",
-        id: "profile"
+        title: "Details"
     });
     $.__views.profile && $.addTopLevelView($.__views.profile);
     $.__views.contactInfo = Ti.UI.createScrollView({
@@ -379,6 +411,7 @@ function Controller() {
             curve: Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
         });
     });
+    init();
     __defers["$.__views.addFavoriteBtn!click!toggleFavorite"] && $.__views.addFavoriteBtn.addEventListener("click", toggleFavorite);
     __defers["$.__views.callBtn!click!callContact"] && $.__views.callBtn.addEventListener("click", callContact);
     __defers["$.__views.emailBtn!click!emailContact"] && $.__views.emailBtn.addEventListener("click", emailContact);

@@ -1,4 +1,23 @@
 
-".container" : {
-  
-}
+".icon-phone":{
+	text: "Yes"
+},
+
+".icon-email":{
+	text:"No"
+},
+
+".icon-btn":{
+	height: 60,
+	width: 60,
+	color: "#C41230",
+	borderRadius: 30,
+	borderWidth: 2,
+	borderColor: "#C41230",
+	backgroundColor: "#33C41230",
+	textAlign: "center",
+	font:{
+		fontSize: 24
+	},
+	left:"10%"
+},

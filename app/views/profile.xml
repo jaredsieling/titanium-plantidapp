@@ -1,7 +1,7 @@
 <Alloy>
 	<!-- Main Container of the View, title of the Window is pulled from the title property on the main view-->
 	
-		<Window class="container vgroup" opacity="0.0" title="Details">
+		<Window id="profile" class="container vgroup" opacity="0.0" title="Details">
 			
 			<TitleControl platform="mobileweb">
 				<Label class="title">Profile</Label>
