@@ -55,7 +55,7 @@
     "favorite": false,
     "name": "Philodendron",
     "sci_name": "Philodendron bipinnatifidum",
-    "group": "Indoor",
+    "group": "Outdoor",
     "water": "When growing philodendron plants, allow the top inch of soil to dry out between waterings. The length of your index finger to the first knuckle is about an inch, so inserting your finger into the soil is a good way to check the moisture level. ",
     "soil": "Use a good commercial potting soil or a mixture consisting of equal parts of loam, sand and peat moss, with some chopped charcoal, gravel, broken crocks or brick added.",
     "social": "Ummmm.... I just grew one in water! MORE MORE MORE!",
@@ -100,5 +100,5 @@
     "latitude": 32.873849,
     "longitude": 131.251016,
     "photo": "https://raw.githubusercontent.com/jaredsieling/titanium-plantidapp/gh-pages/japanesejunipercard.jpg"
-  },
+  }
 ]}
