@@ -142,7 +142,7 @@ function emailContact() {
  */
 function buyPlant(){
 	
-	Ti.Platform.openURL("http://www.amazon.com/Bonsai-Boys-Juniper-Water-Pot/dp/B00LSNF1ES/ref=sr_1_8?ie=UTF8&qid=1442157122&sr=8-8&keywords=10+year+old+juniper+bonsai");
+	Ti.Platform.openURL(_args.buy_link);
 
 	/**
 	 * Before we send the phone number to the platform for handling, lets first verify

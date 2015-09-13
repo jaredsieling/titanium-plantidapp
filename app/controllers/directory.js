@@ -204,8 +204,27 @@ function init(){
 			});
 			
 			$.wrapper.rightNavButton.addEventListener('click', function(e){
-				Alloy.Globals.Navigator.open("camera", {});
-				Ti.API.info("Camera button pressed.");
+	
+	var dialog = Ti.UI.createAlertDialog({
+	    cancel: 2,
+	    buttonNames: ['Camera', 'Gallery', 'Cancel'],
+	    message: "How do you want to grab a photo?"
+	});
+	
+	dialog.addEventListener('click', function(e){
+		 if (e.index !== e.source.cancel){
+	     	if(e.index == 0){
+	     		
+	     	} else {
+	     	
+	     }  
+	     } 
+	});
+	
+	dialog.show();
+				
+				// Alloy.Globals.Navigator.open("camera", {});
+				// Ti.API.info("Camera button pressed.");
 			});
 		}
 	}
