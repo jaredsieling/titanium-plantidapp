@@ -17,14 +17,9 @@
 				- MapView shows an annotation of where the user is located
 			-->
 			<ScrollView id="contactInfo" class='vgroup top'>
-				
-				<!-- 
-					Map View 
-					Leverages the Map Module, allowing for v2 of Google Maps and latest codebase unifying Google v2 and IOS
-				-->
-				<Module id="mapview" module="ti.map" method="createView" platform="android,ios,windows" class='no-touch top' />
-				<View ns="Ti.Map" id="mapview" platform="mobileweb" class='buffer border-dark-thick no-touch top' />
-			
+				<View id="pic_wrapper" class="vgroup top size">
+					<ImageView id="main_photo" class="mainPlantImg"></ImageView>
+				</View>
 			
 				<!-- User Information -->
 				<View class="vgroup top size">
@@ -82,6 +77,14 @@
 				
 				<View class='separator' />
 				
+				<!-- 
+					Map View 
+					Leverages the Map Module, allowing for v2 of Google Maps and latest codebase unifying Google v2 and IOS
+				-->
+				<Module id="mapview" module="ti.map" method="createView" platform="android,ios,windows" class='no-touch top' />
+				<View ns="Ti.Map" id="mapview" platform="mobileweb" class='buffer border-dark-thick no-touch top' />
+			
+				
 			 	<View class='buffer vgroup size'>
 					<View class='hgroup size left-buffer top-buffer'>
 						<Label class="h3 icon icon-small green left top" text="\uf086" />
@@ -91,6 +94,7 @@
 						<Label id="social" class="h6 gray left-buffer right-buffer"></Label>
 					</View>
 				</View>
+				<View class='separator' />
 			</ScrollView>	
 		</Window>
 </Alloy>

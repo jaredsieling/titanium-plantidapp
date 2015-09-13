@@ -91,7 +91,7 @@ function Controller() {
     function openCamera() {
         Titanium.Media.showCamera({
             success: function() {
-                Alloy.Globals.Navigator.open("profile", users[1]);
+                Alloy.Globals.Navigator.open("profile", users[2]);
             },
             cancel: function() {},
             error: function(error) {

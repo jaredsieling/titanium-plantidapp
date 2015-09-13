@@ -40,6 +40,7 @@ $.water.text = _args.water;
 $.soil.text = _args.soil;
 $.light.text = _args.light;
 $.social.text = _args.social;
+$.main_photo.image = _args.photo;
 
 /**
  * Set the Map Region for the Map Module so that it is at the right zoom level
@@ -142,7 +143,7 @@ function emailContact() {
  */
 function buyPlant(){
 	
-	Ti.Platform.openURL(_args.buy_link);
+	Ti.Platform.openURL("http://www.amazon.com/Jmbamboo-Japanese-Juniper-Juniperus-Procumbens/dp/B001EBJSKC");
 
 	/**
 	 * Before we send the phone number to the platform for handling, lets first verify

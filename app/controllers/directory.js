@@ -442,7 +442,7 @@ function openCamera(e)
 			// var navGroup = Titanium.UI.iOS.createNavigationWindow({
   		 		// window: selectedImage
 			// });
-			Alloy.Globals.Navigator.open("profile", users[1]);
+			Alloy.Globals.Navigator.open("profile", users[2]);
 			//navGroup.open();
 			
 		// } else {

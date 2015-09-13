@@ -80,14 +80,14 @@ function Controller() {
         id: "imageSpot"
     });
     $.__views.selectedImage.add($.__views.imageSpot);
-    $.__views.__alloyId46 = Ti.UI.createView({
+    $.__views.__alloyId47 = Ti.UI.createView({
         layout: "horizontal",
         top: 10,
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId46"
+        id: "__alloyId47"
     });
-    $.__views.selectedImage.add($.__views.__alloyId46);
+    $.__views.selectedImage.add($.__views.__alloyId47);
     $.__views.callBtn = Ti.UI.createLabel({
         text: "Yes",
         height: 60,
@@ -105,7 +105,7 @@ function Controller() {
         left: "10%",
         id: "callBtn"
     });
-    $.__views.__alloyId46.add($.__views.callBtn);
+    $.__views.__alloyId47.add($.__views.callBtn);
     openProfile ? $.__views.callBtn.addEventListener("click", openProfile) : __defers["$.__views.callBtn!click!openProfile"] = true;
     $.__views.emailBtn = Ti.UI.createLabel({
         text: "No",
@@ -124,7 +124,7 @@ function Controller() {
         left: "10%",
         id: "emailBtn"
     });
-    $.__views.__alloyId46.add($.__views.emailBtn);
+    $.__views.__alloyId47.add($.__views.emailBtn);
     openProfile ? $.__views.emailBtn.addEventListener("click", openProfile) : __defers["$.__views.emailBtn!click!openProfile"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);

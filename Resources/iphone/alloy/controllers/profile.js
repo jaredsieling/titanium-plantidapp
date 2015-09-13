@@ -9,7 +9,7 @@ function __processArg(obj, key) {
 
 function Controller() {
     function buyPlant() {
-        Ti.Platform.openURL(_args.buy_link);
+        Ti.Platform.openURL("http://www.amazon.com/Jmbamboo-Japanese-Juniper-Juniperus-Procumbens/dp/B001EBJSKC");
     }
     function toggleFavorite() {
         if ($FM.exists(_args.id)) {
@@ -59,25 +59,31 @@ function Controller() {
         id: "contactInfo"
     });
     $.__views.profile.add($.__views.contactInfo);
-    var __alloyId18 = [];
-    $.__views.mapview = (require("ti.map").createView || Ti.UI.createView)({
+    $.__views.pic_wrapper = Ti.UI.createView({
+        layout: "vertical",
+        height: 240,
+        width: 375,
         top: 0,
-        touchEnabled: false,
-        enableZoomControls: false,
-        compassEnabled: false,
-        height: "30%",
-        annotations: __alloyId18,
-        id: "mapview"
+        id: "pic_wrapper"
     });
-    $.__views.contactInfo.add($.__views.mapview);
-    $.__views.__alloyId19 = Ti.UI.createView({
+    $.__views.contactInfo.add($.__views.pic_wrapper);
+    $.__views.main_photo = Ti.UI.createImageView({
+        preventDefaultImage: true,
+        left: 0,
+        right: 0,
+        height: Titanium.UI.FILL,
+        width: Titanium.UI.FILL,
+        id: "main_photo"
+    });
+    $.__views.pic_wrapper.add($.__views.main_photo);
+    $.__views.__alloyId18 = Ti.UI.createView({
         layout: "vertical",
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
         top: 0,
-        id: "__alloyId19"
+        id: "__alloyId18"
     });
-    $.__views.contactInfo.add($.__views.__alloyId19);
+    $.__views.contactInfo.add($.__views.__alloyId18);
     $.__views.name = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         top: 10,
@@ -89,7 +95,7 @@ function Controller() {
         text: "Plant Name",
         id: "name"
     });
-    $.__views.__alloyId19.add($.__views.name);
+    $.__views.__alloyId18.add($.__views.name);
     $.__views.sci_name = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         font: {
@@ -100,7 +106,7 @@ function Controller() {
         text: "Scientific Name",
         id: "sci_name"
     });
-    $.__views.__alloyId19.add($.__views.sci_name);
+    $.__views.__alloyId18.add($.__views.sci_name);
     $.__views.native = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         font: {
@@ -111,15 +117,15 @@ function Controller() {
         text: "Native Lands",
         id: "native"
     });
-    $.__views.__alloyId19.add($.__views.native);
-    $.__views.__alloyId20 = Ti.UI.createView({
+    $.__views.__alloyId18.add($.__views.native);
+    $.__views.__alloyId19 = Ti.UI.createView({
         layout: "horizontal",
         top: 10,
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId20"
+        id: "__alloyId19"
     });
-    $.__views.contactInfo.add($.__views.__alloyId20);
+    $.__views.contactInfo.add($.__views.__alloyId19);
     $.__views.callBtn = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         height: 60,
@@ -138,7 +144,7 @@ function Controller() {
         id: "callBtn",
         text: ""
     });
-    $.__views.__alloyId20.add($.__views.callBtn);
+    $.__views.__alloyId19.add($.__views.callBtn);
     buyPlant ? $.__views.callBtn.addEventListener("click", buyPlant) : __defers["$.__views.callBtn!click!buyPlant"] = true;
     $.__views.emailBtn = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
@@ -158,7 +164,7 @@ function Controller() {
         id: "emailBtn",
         text: ""
     });
-    $.__views.__alloyId20.add($.__views.emailBtn);
+    $.__views.__alloyId19.add($.__views.emailBtn);
     $.__views.msgBtn = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         height: 60,
@@ -177,15 +183,15 @@ function Controller() {
         id: "msgBtn",
         text: ""
     });
-    $.__views.__alloyId20.add($.__views.msgBtn);
-    $.__views.__alloyId21 = Ti.UI.createView({
+    $.__views.__alloyId19.add($.__views.msgBtn);
+    $.__views.__alloyId20 = Ti.UI.createView({
         layout: "vertical",
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
         top: 0,
-        id: "__alloyId21"
+        id: "__alloyId20"
     });
-    $.__views.contactInfo.add($.__views.__alloyId21);
+    $.__views.contactInfo.add($.__views.__alloyId20);
     $.__views.addFavoriteBtn = Ti.UI.createButton({
         top: 10,
         width: "100%",
@@ -197,17 +203,17 @@ function Controller() {
         id: "addFavoriteBtn",
         textid: "bookmarkBtn"
     });
-    $.__views.__alloyId21.add($.__views.addFavoriteBtn);
+    $.__views.__alloyId20.add($.__views.addFavoriteBtn);
     toggleFavorite ? $.__views.addFavoriteBtn.addEventListener("click", toggleFavorite) : __defers["$.__views.addFavoriteBtn!click!toggleFavorite"] = true;
-    $.__views.__alloyId22 = Ti.UI.createView({
+    $.__views.__alloyId21 = Ti.UI.createView({
         top: 25,
         height: 1,
         width: "90%",
         backgroundColor: "#acacac",
-        id: "__alloyId22"
+        id: "__alloyId21"
     });
-    $.__views.contactInfo.add($.__views.__alloyId22);
-    $.__views.__alloyId23 = Ti.UI.createView({
+    $.__views.contactInfo.add($.__views.__alloyId21);
+    $.__views.__alloyId22 = Ti.UI.createView({
         layout: "vertical",
         top: 10,
         left: 10,
@@ -215,19 +221,19 @@ function Controller() {
         bottom: 10,
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId23"
+        id: "__alloyId22"
     });
-    $.__views.contactInfo.add($.__views.__alloyId23);
-    $.__views.__alloyId24 = Ti.UI.createView({
+    $.__views.contactInfo.add($.__views.__alloyId22);
+    $.__views.__alloyId23 = Ti.UI.createView({
         layout: "horizontal",
         top: 10,
         left: 10,
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId24"
+        id: "__alloyId23"
     });
-    $.__views.__alloyId23.add($.__views.__alloyId24);
-    $.__views.__alloyId25 = Ti.UI.createLabel({
+    $.__views.__alloyId22.add($.__views.__alloyId23);
+    $.__views.__alloyId24 = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         top: 0,
         left: 0,
@@ -237,10 +243,10 @@ function Controller() {
         },
         color: "#83a614",
         text: "",
-        id: "__alloyId25"
+        id: "__alloyId24"
     });
-    $.__views.__alloyId24.add($.__views.__alloyId25);
-    $.__views.__alloyId26 = Ti.UI.createLabel({
+    $.__views.__alloyId23.add($.__views.__alloyId24);
+    $.__views.__alloyId25 = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         left: 10,
         right: 10,
@@ -249,18 +255,18 @@ function Controller() {
         },
         color: "#83a614",
         text: "Watering Schedule",
-        id: "__alloyId26"
+        id: "__alloyId25"
     });
-    $.__views.__alloyId24.add($.__views.__alloyId26);
-    $.__views.__alloyId27 = Ti.UI.createView({
+    $.__views.__alloyId23.add($.__views.__alloyId25);
+    $.__views.__alloyId26 = Ti.UI.createView({
         layout: "horizontal",
         top: 10,
         left: 10,
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId27"
+        id: "__alloyId26"
     });
-    $.__views.__alloyId23.add($.__views.__alloyId27);
+    $.__views.__alloyId22.add($.__views.__alloyId26);
     $.__views.water = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         left: 10,
@@ -272,16 +278,16 @@ function Controller() {
         text: "Water this plant 2-3 quarts every 2-3 days. If you happen to forget a day, don't over water this thing, or it will get angry at you.'",
         id: "water"
     });
-    $.__views.__alloyId27.add($.__views.water);
-    $.__views.__alloyId28 = Ti.UI.createView({
+    $.__views.__alloyId26.add($.__views.water);
+    $.__views.__alloyId27 = Ti.UI.createView({
         top: 25,
         height: 1,
         width: "90%",
         backgroundColor: "#acacac",
-        id: "__alloyId28"
+        id: "__alloyId27"
     });
-    $.__views.contactInfo.add($.__views.__alloyId28);
-    $.__views.__alloyId29 = Ti.UI.createView({
+    $.__views.contactInfo.add($.__views.__alloyId27);
+    $.__views.__alloyId28 = Ti.UI.createView({
         layout: "vertical",
         top: 10,
         left: 10,
@@ -289,19 +295,19 @@ function Controller() {
         bottom: 10,
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId29"
+        id: "__alloyId28"
     });
-    $.__views.contactInfo.add($.__views.__alloyId29);
-    $.__views.__alloyId30 = Ti.UI.createView({
+    $.__views.contactInfo.add($.__views.__alloyId28);
+    $.__views.__alloyId29 = Ti.UI.createView({
         layout: "horizontal",
         top: 10,
         left: 10,
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId30"
+        id: "__alloyId29"
     });
-    $.__views.__alloyId29.add($.__views.__alloyId30);
-    $.__views.__alloyId31 = Ti.UI.createLabel({
+    $.__views.__alloyId28.add($.__views.__alloyId29);
+    $.__views.__alloyId30 = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         top: 0,
         left: 0,
@@ -311,10 +317,10 @@ function Controller() {
         },
         color: "#83a614",
         text: "",
-        id: "__alloyId31"
+        id: "__alloyId30"
     });
-    $.__views.__alloyId30.add($.__views.__alloyId31);
-    $.__views.__alloyId32 = Ti.UI.createLabel({
+    $.__views.__alloyId29.add($.__views.__alloyId30);
+    $.__views.__alloyId31 = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         left: 10,
         right: 10,
@@ -323,18 +329,18 @@ function Controller() {
         },
         color: "#83a614",
         text: "Light",
-        id: "__alloyId32"
+        id: "__alloyId31"
     });
-    $.__views.__alloyId30.add($.__views.__alloyId32);
-    $.__views.__alloyId33 = Ti.UI.createView({
+    $.__views.__alloyId29.add($.__views.__alloyId31);
+    $.__views.__alloyId32 = Ti.UI.createView({
         layout: "horizontal",
         top: 10,
         left: 10,
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId33"
+        id: "__alloyId32"
     });
-    $.__views.__alloyId29.add($.__views.__alloyId33);
+    $.__views.__alloyId28.add($.__views.__alloyId32);
     $.__views.light = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         left: 10,
@@ -346,16 +352,16 @@ function Controller() {
         text: "Water this plant 2-3 quarts every 2-3 days. If you happen to forget a day, don't over water this thing, or it will get angry at you.'",
         id: "light"
     });
-    $.__views.__alloyId33.add($.__views.light);
-    $.__views.__alloyId34 = Ti.UI.createView({
+    $.__views.__alloyId32.add($.__views.light);
+    $.__views.__alloyId33 = Ti.UI.createView({
         top: 25,
         height: 1,
         width: "90%",
         backgroundColor: "#acacac",
-        id: "__alloyId34"
+        id: "__alloyId33"
     });
-    $.__views.contactInfo.add($.__views.__alloyId34);
-    $.__views.__alloyId35 = Ti.UI.createView({
+    $.__views.contactInfo.add($.__views.__alloyId33);
+    $.__views.__alloyId34 = Ti.UI.createView({
         layout: "vertical",
         top: 10,
         left: 10,
@@ -363,19 +369,19 @@ function Controller() {
         bottom: 10,
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId35"
+        id: "__alloyId34"
     });
-    $.__views.contactInfo.add($.__views.__alloyId35);
-    $.__views.__alloyId36 = Ti.UI.createView({
+    $.__views.contactInfo.add($.__views.__alloyId34);
+    $.__views.__alloyId35 = Ti.UI.createView({
         layout: "horizontal",
         top: 10,
         left: 10,
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId36"
+        id: "__alloyId35"
     });
-    $.__views.__alloyId35.add($.__views.__alloyId36);
-    $.__views.__alloyId37 = Ti.UI.createLabel({
+    $.__views.__alloyId34.add($.__views.__alloyId35);
+    $.__views.__alloyId36 = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         top: 0,
         left: 0,
@@ -385,10 +391,10 @@ function Controller() {
         },
         color: "#83a614",
         text: "",
-        id: "__alloyId37"
+        id: "__alloyId36"
     });
-    $.__views.__alloyId36.add($.__views.__alloyId37);
-    $.__views.__alloyId38 = Ti.UI.createLabel({
+    $.__views.__alloyId35.add($.__views.__alloyId36);
+    $.__views.__alloyId37 = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         left: 10,
         right: 10,
@@ -397,18 +403,18 @@ function Controller() {
         },
         color: "#83a614",
         text: "Soil Care",
-        id: "__alloyId38"
+        id: "__alloyId37"
     });
-    $.__views.__alloyId36.add($.__views.__alloyId38);
-    $.__views.__alloyId39 = Ti.UI.createView({
+    $.__views.__alloyId35.add($.__views.__alloyId37);
+    $.__views.__alloyId38 = Ti.UI.createView({
         layout: "horizontal",
         top: 10,
         left: 10,
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
-        id: "__alloyId39"
+        id: "__alloyId38"
     });
-    $.__views.__alloyId35.add($.__views.__alloyId39);
+    $.__views.__alloyId34.add($.__views.__alloyId38);
     $.__views.soil = Ti.UI.createLabel({
         autoLink: Ti.UI.AUTOLINK_ALL,
         left: 10,
@@ -419,15 +425,26 @@ function Controller() {
         color: "#666",
         id: "soil"
     });
-    $.__views.__alloyId39.add($.__views.soil);
-    $.__views.__alloyId40 = Ti.UI.createView({
+    $.__views.__alloyId38.add($.__views.soil);
+    $.__views.__alloyId39 = Ti.UI.createView({
         top: 25,
         height: 1,
         width: "90%",
         backgroundColor: "#acacac",
-        id: "__alloyId40"
+        id: "__alloyId39"
     });
-    $.__views.contactInfo.add($.__views.__alloyId40);
+    $.__views.contactInfo.add($.__views.__alloyId39);
+    var __alloyId40 = [];
+    $.__views.mapview = (require("ti.map").createView || Ti.UI.createView)({
+        top: 0,
+        touchEnabled: false,
+        enableZoomControls: false,
+        compassEnabled: false,
+        height: "30%",
+        annotations: __alloyId40,
+        id: "mapview"
+    });
+    $.__views.contactInfo.add($.__views.mapview);
     $.__views.__alloyId41 = Ti.UI.createView({
         layout: "vertical",
         top: 10,
@@ -493,6 +510,14 @@ function Controller() {
         id: "social"
     });
     $.__views.__alloyId45.add($.__views.social);
+    $.__views.__alloyId46 = Ti.UI.createView({
+        top: 25,
+        height: 1,
+        width: "90%",
+        backgroundColor: "#acacac",
+        id: "__alloyId46"
+    });
+    $.__views.contactInfo.add($.__views.__alloyId46);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var _args = arguments[0] || {}, Map = require("ti.map"), $FM = require("favoritesmgr");
@@ -503,6 +528,7 @@ function Controller() {
     $.soil.text = _args.soil;
     $.light.text = _args.light;
     $.social.text = _args.social;
+    $.main_photo.image = _args.photo;
     var lat = _args.latitude;
     $.mapview.setRegion({
         latitude: lat || 30.631256,

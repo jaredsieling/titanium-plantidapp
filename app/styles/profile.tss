@@ -51,7 +51,16 @@
 	width: "90%",
 	backgroundColor:"#acacac"
 },
-
+"#pic_wrapper":{
+	width: 375,
+	height: 240
+},
+".mainPlantImg":{
+	left: 0,
+	right: 0,
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL
+},
 
 /**
  * 	Action Button Styles
