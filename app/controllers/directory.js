@@ -194,13 +194,18 @@ function init(){
 	else {
 			
 		if(OS_IOS){
-			$.wrapper.leftNavButton = Ti.UI.createLabel({
+			$.wrapper.rightNavButton = Ti.UI.createLabel({
 				text: "\ue601",
-				color: "#C41230",
+				color: "#fff",
 				font:{
 					fontFamily:"icomoon",
 					fontSize:36
 				}
+			});
+			
+			$.wrapper.rightNavButton.addEventListener('click', function(e){
+				Alloy.Globals.Navigator.open("camera", {});
+				Ti.API.info("Camera button pressed.");
 			});
 		}
 	}

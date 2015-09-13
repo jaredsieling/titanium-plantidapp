@@ -54,14 +54,20 @@ function Controller() {
             });
         }
         _args.title && ($.wrapper.title = _args.title);
-        _args.restrictToFavorites ? true && ($.searchBar.showBookmark = false) : $.wrapper.leftNavButton = Ti.UI.createLabel({
-            text: "",
-            color: "#C41230",
-            font: {
-                fontFamily: "icomoon",
-                fontSize: 36
-            }
-        });
+        if (_args.restrictToFavorites) true && ($.searchBar.showBookmark = false); else {
+            $.wrapper.rightNavButton = Ti.UI.createLabel({
+                text: "",
+                color: "#fff",
+                font: {
+                    fontFamily: "icomoon",
+                    fontSize: 36
+                }
+            });
+            $.wrapper.rightNavButton.addEventListener("click", function() {
+                Alloy.Globals.Navigator.open("camera", {});
+                Ti.API.info("Camera button pressed.");
+            });
+        }
     }
     function onItemClick(e) {
         Ti.Analytics.featureEvent(Ti.Platform.osname + "." + title + ".contact.clicked");
