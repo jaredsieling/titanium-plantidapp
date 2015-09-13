@@ -27,8 +27,9 @@ function Controller() {
     $.__views.rocket = Ti.UI.createWindow({
         backgroundColor: "#C41230",
         titleAttributes: {
-            color: "#83a614"
+            color: "#fff"
         },
+        barColor: "#83a614",
         theme: "appcelerator.NoActionBar",
         id: "rocket"
     });

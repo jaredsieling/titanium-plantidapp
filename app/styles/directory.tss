@@ -41,7 +41,8 @@
 	},
 	color:"#ffff43",
 	text:"\uf005",	
-	right: 10
+	right: 10,
+	top:10
 },
 
 ".title":{

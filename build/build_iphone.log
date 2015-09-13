@@ -1,5 +1,5 @@
 
-Sun Sep 13 2015 09:51:35 GMT-0500 (CDT)
+Sun Sep 13 2015 10:18:01 GMT-0500 (CDT)
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.1.1.GA --project-dir /Users/jared/workspaces/titanium/titanium-plantidapp --target simulator --ios-version 8.4 --device-family iphone --deploy-type development --sim-type iphone --sim-version 8.4 --device-id 54A30357-6114-466B-B1A4-9C86DCB1EAA1 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51604 --plugin-paths /Users/jared/.appcelerator/install/4.1.3/package/node_modules --config-file /var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T/build-1442155891834.json --no-banner
+  /usr/local/bin/node /Users/jared/.appcelerator/install/4.1.3/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ios --log-level trace --sdk 4.1.1.GA --project-dir /Users/jared/workspaces/titanium/titanium-plantidapp --target simulator --ios-version 8.4 --device-family iphone --deploy-type development --sim-type iphone --sim-version 8.4 --device-id 54A30357-6114-466B-B1A4-9C86DCB1EAA1 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 51604 --plugin-paths /Users/jared/.appcelerator/install/4.1.3/package/node_modules --config-file /var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T/build-1442157478481.json --no-banner
 
 [DEBUG]  Detecting modules in /Users/jared/Library/Application Support/Titanium/modules
 [DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/jared/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
@@ -154,6 +154,16 @@ Command
 [INFO]   created:    "Resources/iphone/alloy/controllers/annotation.js"
 [DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/annotation.js.map"
 [INFO]   created:     "Resources/iphone/alloy/styles/annotation.js"
+[INFO]   [camera.xml] view processing...
+[INFO]   style:      "camera.tss"
+[INFO]   view:       "camera.xml"
+[INFO]   controller: "camera.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/camera.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/camera.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/camera.js"
 [INFO]   [directory.xml] view processing...
 [INFO]   style:      "directory.tss"
 [INFO]   view:       "directory.xml"
@@ -196,6 +206,16 @@ Command
 [INFO]   created:    "Resources/iphone/alloy/controllers/profile.js"
 [DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/profile.js.map"
 [INFO]   created:     "Resources/iphone/alloy/styles/profile.js"
+[INFO]   [selectedImage.xml] view processing...
+[INFO]   style:      "selectedImage.tss"
+[INFO]   view:       "selectedImage.xml"
+[INFO]   controller: "selectedImage.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/selectedImage.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/selectedImage.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/selectedImage.js"
 [INFO]   
 [INFO]   [app.js] using cached app.js...
 [INFO]   
@@ -223,9 +243,9 @@ Command
 [TRACE]  
 [TRACE]  Benchmarking
 [TRACE]  ------------
-[TRACE]  [0.66567s] TOTAL
+[TRACE]  [0.77012s] TOTAL
 [INFO]   
-[INFO]   Alloy compiled in 0.66567s
+[INFO]   Alloy compiled in 0.77012s
 [INFO]   Alloy compiler completed successfully
 [INFO]   Updating Xcode project configuration: project.xcconfig
 [DEBUG]  Setting Info.plist CFBundleVersion to 0.1
@@ -254,6 +274,8 @@ Command
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/fonts/icomoon.woff => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/fonts/icomoon.woff
 [DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/iTunesArtwork => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/iTunesArtwork
 [DEBUG]  Copying /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/iTunesArtwork@2x => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/iTunesArtwork@2x
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/Camera/camera.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/Camera/camera.png
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/Camera/gallery.jpg => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/Camera/gallery.jpg
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight01.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight01.png
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight01@2x.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight01@2x.png
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/images/RocketFlight/RocketFlight02.png => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/images/RocketFlight/RocketFlight02.png
@@ -387,15 +409,19 @@ Command
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/constants.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/constants.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/BaseController.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/BaseController.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/annotation.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/annotation.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/camera.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/camera.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/directory.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/directory.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/index.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/index.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/loader.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/loader.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/profile.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/profile.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/controllers/selectedImage.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/controllers/selectedImage.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/annotation.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/annotation.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/camera.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/camera.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/directory.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/directory.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/index.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/index.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/loader.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/loader.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/profile.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/profile.js
+[DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/styles/selectedImage.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/styles/selectedImage.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/localStorage.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/sync/localStorage.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/properties.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/sync/properties.js
 [DEBUG]  Symlinking /Users/jared/workspaces/titanium/titanium-plantidapp/Resources/iphone/alloy/sync/sql.js => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/alloy/sync/sql.js
@@ -406,15 +432,15 @@ Command
 [INFO]   Processing Titanium namespace resources
 [DEBUG]  Copying /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/iphone/modules/ui/images => /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app/modules/ui/images
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 1s 405ms
+[INFO]   Finished building the application in 1s 462ms
 [INFO]   Launching iOS Simulator
-[DEBUG]  [ioslib] Removing old log file: /Users/jared/Library/Developer/CoreSimulator/Devices/54A30357-6114-466B-B1A4-9C86DCB1EAA1/data/Containers/Data/Application/1341AEA3-A930-4D6C-88C5-A087CE2CA54E/Documents/d4858b22-5f39-4b01-9bbb-7c2ad6962770.log
+[DEBUG]  [ioslib] Removing old log file: /Users/jared/Library/Developer/CoreSimulator/Devices/54A30357-6114-466B-B1A4-9C86DCB1EAA1/data/Containers/Data/Application/0515D2D0-61E7-4111-A0B3-45211CF4215C/Documents/d4858b22-5f39-4b01-9bbb-7c2ad6962770.log
 [DEBUG]  [ioslib] Executing: /Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/node_modules/ioslib/lib/ios-sim "launch" "/Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app" "--verbose" "--xcode-dir" "/Applications/Xcode.app/Contents/Developer" "--udid" "54A30357-6114-466B-B1A4-9C86DCB1EAA1" "--timeout" "180"
 [DEBUG]  [ioslib] Executing: osascript "/Users/jared/Library/Application Support/Titanium/mobilesdk/osx/4.1.1.GA/node_modules/ioslib/lib/iphone_sim_activate.scpt" "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app"
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7fa648c29320> specified by app path /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7fa648e10ca0> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stderr-pipe-1442155897'
-[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stdout-pipe-1442155897'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7fa288630bb0> specified by app path /Users/jared/workspaces/titanium/titanium-plantidapp/build/iphone/build/Debug-iphonesimulator/PlantBuddy.app
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7fa2884010c0> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stderr-pipe-1442157483'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/q8/f28z3fmx2053vw4gpplbpl6c0000gn/T//ios-sim-stdout-pipe-1442157483'
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] using device family iphone
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 328DF731-462D-4170-B782-A62BAC6C39DE == 54A30357-6114-466B-B1A4-9C86DCB1EAA1
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing DED94ED6-E0BC-4DFE-9118-0442484AD9FC == 54A30357-6114-466B-B1A4-9C86DCB1EAA1
@@ -423,5 +449,5 @@ Command
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 54A30357-6114-466B-B1A4-9C86DCB1EAA1 == 54A30357-6114-466B-B1A4-9C86DCB1EAA1
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] set device to : iPhone 6
 [DEBUG]  [ioslib] [ios-sim] [DEBUG] Session started
-[DEBUG]  [ioslib] Found application log file: /Users/jared/Library/Developer/CoreSimulator/Devices/54A30357-6114-466B-B1A4-9C86DCB1EAA1/data/Containers/Data/Application/7EEF855B-5F93-4CFC-8BE9-D4961A88F1EC/Documents/d4858b22-5f39-4b01-9bbb-7c2ad6962770.log
-[INFO]   Project built successfully in 7s 27ms
+[DEBUG]  [ioslib] Found application log file: /Users/jared/Library/Developer/CoreSimulator/Devices/54A30357-6114-466B-B1A4-9C86DCB1EAA1/data/Containers/Data/Application/D29FF42E-37D4-414D-8869-2CACC7B06552/Documents/d4858b22-5f39-4b01-9bbb-7c2ad6962770.log
+[INFO]   Project built successfully in 6s 833ms

@@ -95,8 +95,9 @@ function Controller() {
     $.__views.wrapper = Ti.UI.createWindow({
         backgroundColor: "#fff",
         titleAttributes: {
-            color: "#83a614"
+            color: "#fff"
         },
+        barColor: "#83a614",
         layout: "vertical",
         id: "wrapper",
         title: "Virtual Garden"
@@ -181,7 +182,8 @@ function Controller() {
                     },
                     color: "#ffff43",
                     text: "",
-                    right: 10
+                    right: 10,
+                    top: 10
                 }
             };
             __alloyId12.push(__alloyId15);

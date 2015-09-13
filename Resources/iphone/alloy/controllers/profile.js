@@ -62,8 +62,9 @@ function Controller() {
     $.__views.profile = Ti.UI.createWindow({
         backgroundColor: "#fff",
         titleAttributes: {
-            color: "#83a614"
+            color: "#fff"
         },
+        barColor: "#83a614",
         layout: "vertical",
         theme: "appcelerator",
         opacity: "0.0",
