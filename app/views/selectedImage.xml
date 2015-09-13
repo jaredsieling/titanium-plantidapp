@@ -1,0 +1,4 @@
+<Alloy>
+    <Window id="selectedImage" title="Selected plant" backgroundColor="#fff">
+    </Window>
+</Alloy>
