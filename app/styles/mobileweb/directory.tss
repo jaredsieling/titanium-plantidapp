@@ -47,6 +47,10 @@
 		fontSize:28
 	}
 },
+".right":{
+	right: 0,
+	width: Titanium.UI.SIZE
+},
 ".bookmark":{
 	//text:"\uf02e"
 	text: "\ue601",

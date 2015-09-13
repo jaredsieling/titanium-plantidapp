@@ -61,7 +61,7 @@ function init(){
 	 * Sorts the `users` array by the lastName property of the user (leverages UnderscoreJS _.sortBy function)
 	 */
 	users = _.sortBy(users, function(user){
-		return user.lastName;
+		return user.name;
 	});
 	
 	/**
@@ -81,7 +81,7 @@ function init(){
 		 * sections. (leverages the UndrescoreJS _.groupBy function)
 		 */
 		var userGroups  = _.groupBy(users, function(item){
-		 	return item.lastName.charAt(0);
+		 	return item.group;
 		});
         
         /**
@@ -109,7 +109,7 @@ function init(){
 			 */
 			indexes.push({
 				index: indexes.length,
-				title: group[0].lastName.charAt(0)
+				title: group[0].group
 			});
 
 			/**
@@ -127,7 +127,7 @@ function init(){
 			  * Create and Add the Label to the ListView Section header view
 			  */
 			 var sectionLabel = Ti.UI.createLabel({
-			 	text: group[0].lastName.charAt(0),
+			 	text: group[0].group,
 			 	left: 20,
 			 	font:{
 			 		fontSize: 20
@@ -194,13 +194,18 @@ function init(){
 	else {
 			
 		if(OS_IOS){
-			$.wrapper.leftNavButton = Ti.UI.createLabel({
+			$.wrapper.rightNavButton = Ti.UI.createLabel({
 				text: "\ue601",
-				color: "#C41230",
+				color: "#fff",
 				font:{
 					fontFamily:"icomoon",
 					fontSize:36
 				}
+			});
+			
+			$.wrapper.rightNavButton.addEventListener('click', function(e){
+				Alloy.Globals.Navigator.open("camera", {});
+				Ti.API.info("Camera button pressed.");
 			});
 		}
 	}
@@ -252,17 +257,18 @@ var preprocessForListView = function(rawData) {
 		return {
 			template: isFavorite ? "favoriteTemplate" : "userTemplate",
 			properties: {
-				searchableText: item.firstName + ' ' + item.lastName + ' ' + item.company + ' ' + item.email,
+				searchableText: item.name + ' ' + item.sci_name,
 				user: item,
 				editActions: [
-					{title: isFavorite ? "- Favorite" : "+ Favorite", color: isFavorite ? "#C41230" : "#038BC8" }
+					{title: isFavorite ? "- Planted" : "+ Planted", color: isFavorite ? "#C41230" : "#038BC8" }
 				],
 				canEdit:true
 			},
 			userName: {text: item.firstName+" "+item.lastName},
 			userCompany: {text: item.company},
 			userPhoto: {image: item.photo},
-			name: {text: item.name} 
+			name: {text: item.name},
+			sci_name: {text: item.sci_name} 
 		};
 	});	
 };
@@ -315,7 +321,7 @@ var onBookmarkClick = function onClick (e){
 	/**
 	 * Open this same controller into a new page, pass the flag to restrict the list only to favorite Contacts and force the title
 	 */
-	Alloy.Globals.Navigator.open("directory", {restrictToFavorites:true, title:"Favorites", displayHomeAsUp:true});
+	Alloy.Globals.Navigator.open("directory", {restrictToFavorites:true, title:"Owned Plants", displayHomeAsUp:true});
 };
 
 /**
@@ -366,7 +372,7 @@ if(OS_IOS){
 		var row = e.section.getItemAt(e.itemIndex);
 		var id = row.properties.user.id;
 		
-		if(e.action === "+ Favorite") {
+		if(e.action === "+ Planted") {
 			$FM.add(id);
 		}
 		else {

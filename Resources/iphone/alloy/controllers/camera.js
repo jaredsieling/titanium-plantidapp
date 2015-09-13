@@ -85,8 +85,9 @@ function Controller() {
     $.__views.cameraWindow = Ti.UI.createWindow({
         backgroundColor: "#fff",
         titleAttributes: {
-            color: "#C41230"
+            color: "#fff"
         },
+        barColor: "#83a614",
         layout: "vertical",
         id: "cameraWindow",
         title: "Garden"

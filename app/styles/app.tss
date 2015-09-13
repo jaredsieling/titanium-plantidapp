@@ -12,8 +12,9 @@
 'Window': {
     backgroundColor: '#fff', // white background instead of default transparent
     titleAttributes:  {
-        color: "#C41230"
-   }
+        color: "#fff"
+   },
+   barColor: "#83a614"
 },
 
 'Window[platform=android]': {
@@ -263,6 +264,9 @@
 
 ".red":{
 	color: '#C41230'
+}
+".green":{
+	color: '#83a614'
 }
 
 /**

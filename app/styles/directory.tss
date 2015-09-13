@@ -3,7 +3,7 @@
  * 	Style for The User Template
  */
 ".template":{
-	height: 100,
+	height: 240,
 	width: Ti.UI.FILL
 },
 ".wrapper": {
@@ -39,9 +39,10 @@
 		fontSize: 25,
 		fontFamily:"icomoon",
 	},
-	color:"#038BC8",
+	color:"#ffff43",
 	text:"\uf005",	
-	right: 10
+	right: 10,
+	top:10
 },
 
 ".title":{
@@ -73,13 +74,13 @@
 ".mainPlantImg":{
 	left: 0,
 	right: 0,
-	height: 200,
+	height: Titanium.UI.FILL,
 	width: Titanium.UI.FILL
 },
 ".main-buffer":{
 	left: 5,
 	right: 5,
-	bottom: 5
+	top: 10
 },
 
 ".smoothAvatarBorderRadius": {
@@ -132,5 +133,6 @@
 },
 
 "#listView":{
-	tintColor: "#666"
+	tintColor: "#666",
 }
+

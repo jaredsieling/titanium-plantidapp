@@ -27,8 +27,9 @@ function Controller() {
     $.__views.selectedImage = Ti.UI.createWindow({
         backgroundColor: "#fff",
         titleAttributes: {
-            color: "#C41230"
+            color: "#fff"
         },
+        barColor: "#83a614",
         id: "selectedImage",
         title: "Selected plant"
     });
